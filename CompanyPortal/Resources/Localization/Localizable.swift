@@ -74,6 +74,21 @@ internal enum L10n {
       }
     }
   }
+
+  internal enum TabBar {
+    /// Профиль
+    internal static var profile: String {
+        return L10n.tr("Localizable", "tabBar.profile")
+    }
+    /// Магазин
+    internal static var shop: String {
+        return L10n.tr("Localizable", "tabBar.shop")
+    }
+    /// Задачи
+    internal static var tasks: String {
+        return L10n.tr("Localizable", "tabBar.tasks")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 

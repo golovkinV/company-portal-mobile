@@ -39,13 +39,14 @@ final class MainTabBarViewController: UITabBarController {
     }
     
     func configure(controllers: [UIViewController]) {
-                
-//        let profileViewController = controllers[0]
-//        let profileNavigationController = BaseNavigationController(rootViewController: profileViewController)
-//        profileNavigationController.title = text.profile
-//        profileNavigationController.tabBarItem.image = #imageLiteral(resourceName: "profile_bar")
+        let text = L10n.TabBar.self
         
-        viewControllers = []
+        let profileViewController = controllers[0]
+        let profileNavigationController = BaseNavigationController(rootViewController: profileViewController)
+        profileNavigationController.title = text.profile
+        profileNavigationController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_profile")
+        
+        viewControllers = [profileViewController]
     }
     
     // MARK: - Private
@@ -69,7 +70,7 @@ final class MainTabBarViewController: UITabBarController {
 
 extension MainTabBarViewController: MainTabBarViewBehavior {
     func selectModule(index: Int) {
-//        selectedViewController = viewControllers?[index]
+        selectedViewController = viewControllers?[index]
     }
 }
 

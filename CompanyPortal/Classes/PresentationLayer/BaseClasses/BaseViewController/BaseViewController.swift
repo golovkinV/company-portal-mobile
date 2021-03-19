@@ -24,6 +24,7 @@ class BaseViewController: UIViewController, WaitingBehavior, LanguageBehavior {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupBackButton()
+        self.setupViews()
         self.setupStrings()
     }
 
@@ -31,6 +32,8 @@ class BaseViewController: UIViewController, WaitingBehavior, LanguageBehavior {
 
     func setupStrings() {}
 
+    func setupViews() {}
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return self.statusBarStyle
     }
@@ -40,6 +43,7 @@ class BaseViewController: UIViewController, WaitingBehavior, LanguageBehavior {
     }
 
     func setupBackButton() {
+        
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "",
                                                                 style: .plain,
                                                                 target: nil,
