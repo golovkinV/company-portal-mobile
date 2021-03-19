@@ -10,6 +10,8 @@ public protocol AppTheme {
     var baseColor: UIColor { get }
     var selectedColor: UIColor { get }
     var unselectedColor: UIColor { get }
+    var red: UIColor { get }
+    
     var defaultFont: AppFont? { get }
 }
 
@@ -27,11 +29,11 @@ public struct MainTheme: AppTheme {
         navbar.isTranslucent = true
         navbar.isOpaque = false
         navbar.titleTextAttributes = [
-            .foregroundColor: black,
+            .foregroundColor: selectedColor,
             .font: UIFont.font(ofSize: 17, weight: .medium)
         ]
-        navbar.barTintColor = self.white
-        navbar.tintColor = black
+        navbar.barTintColor = baseColor
+        navbar.tintColor = selectedColor
     }
 
     func configureTextView() {
@@ -50,6 +52,7 @@ public struct MainTheme: AppTheme {
     public var baseColor: UIColor = #colorLiteral(red: 0.930835247, green: 0.9659045339, blue: 0.9994764924, alpha: 1)
     public var selectedColor: UIColor = #colorLiteral(red: 0.07494878024, green: 0.3862712085, blue: 0.8201563358, alpha: 1)
     public var unselectedColor: UIColor = #colorLiteral(red: 0.5568057895, green: 0.5569025874, blue: 0.5567930341, alpha: 1)
+    public var red: UIColor = #colorLiteral(red: 0.9991626143, green: 0.1742511094, blue: 0.3347000182, alpha: 1)
     
     // MARK: - Font
 
