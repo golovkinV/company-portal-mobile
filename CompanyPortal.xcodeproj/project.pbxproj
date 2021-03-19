@@ -76,6 +76,30 @@
 		E7F815012605054F00D3DCE4 /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F814FC2605054F00D3DCE4 /* MainTabBarPresenter.swift */; };
 		E7F815022605054F00D3DCE4 /* MainTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F814FD2605054F00D3DCE4 /* MainTabBarRouter.swift */; };
 		E7F815032605054F00D3DCE4 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F814FE2605054F00D3DCE4 /* MainTabBarViewController.swift */; };
+		E7F8152226050DDC00D3DCE4 /* UserProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8151C26050DDC00D3DCE4 /* UserProfileAssembly.swift */; };
+		E7F8152326050DDC00D3DCE4 /* UserProfileContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8151D26050DDC00D3DCE4 /* UserProfileContracts.swift */; };
+		E7F8152426050DDC00D3DCE4 /* UserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8151E26050DDC00D3DCE4 /* UserProfilePresenter.swift */; };
+		E7F8152526050DDC00D3DCE4 /* UserProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8151F26050DDC00D3DCE4 /* UserProfileRouter.swift */; };
+		E7F8152626050DDC00D3DCE4 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8152026050DDC00D3DCE4 /* UserProfileViewController.swift */; };
+		E7F8152726050DDC00D3DCE4 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F8152126050DDC00D3DCE4 /* UserProfileViewController.xib */; };
+		E7F815482605154100D3DCE4 /* AvatarCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8152C2605154100D3DCE4 /* AvatarCellAdapter.swift */; };
+		E7F815492605154100D3DCE4 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8152D2605154100D3DCE4 /* AvatarCell.swift */; };
+		E7F8154A2605154100D3DCE4 /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F8152E2605154100D3DCE4 /* AvatarCell.xib */; };
+		E7F815532605154100D3DCE4 /* UserInfoCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8153E2605154100D3DCE4 /* UserInfoCellAdapter.swift */; };
+		E7F815542605154100D3DCE4 /* UserInfoCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F815402605154100D3DCE4 /* UserInfoCellDelegate.swift */; };
+		E7F815552605154100D3DCE4 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F815412605154100D3DCE4 /* UserInfoCell.swift */; };
+		E7F815562605154100D3DCE4 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F815422605154100D3DCE4 /* UserInfoCell.xib */; };
+		E7F815572605154100D3DCE4 /* UserInfoContainerCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F815442605154100D3DCE4 /* UserInfoContainerCellDelegate.swift */; };
+		E7F815582605154100D3DCE4 /* UserInfoContainerCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F815452605154100D3DCE4 /* UserInfoContainerCellAdapter.swift */; };
+		E7F815592605154100D3DCE4 /* UserInfoContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F815462605154100D3DCE4 /* UserInfoContainerCell.swift */; };
+		E7F8155A2605154100D3DCE4 /* UserInfoContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F815472605154100D3DCE4 /* UserInfoContainerCell.xib */; };
+		E7F8155D2605167300D3DCE4 /* ListSectionControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8155C2605167300D3DCE4 /* ListSectionControllerExtension.swift */; };
+		E7F81561260516D800D3DCE4 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F81560260516D800D3DCE4 /* Containers.swift */; };
+		E7F815692605179C00D3DCE4 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F815682605179C00D3DCE4 /* BaseCollectionViewCell.swift */; };
+		E7F8157626051E2100D3DCE4 /* LogoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F8157126051E2100D3DCE4 /* LogoutCell.xib */; };
+		E7F8157726051E2100D3DCE4 /* LogoutCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8157326051E2100D3DCE4 /* LogoutCellDelegate.swift */; };
+		E7F8157826051E2100D3DCE4 /* LogoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8157426051E2100D3DCE4 /* LogoutCell.swift */; };
+		E7F8157926051E2100D3DCE4 /* LogoutCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8157526051E2100D3DCE4 /* LogoutCellAdapter.swift */; };
 		EDF48754DE7F0715D0864B92 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3519F7964C648EA93A429C /* NSObjectExtension.swift */; };
 		F397C74395EB6CA8B895803F /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A42CB636F12D221FFDC629 /* LoadableView.swift */; };
 		F524C00E2A306D1A6B8813D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F4702903DDB0C17C11954E /* LaunchScreen.storyboard */; };
@@ -162,6 +186,30 @@
 		E7F814FC2605054F00D3DCE4 /* MainTabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenter.swift; sourceTree = "<group>"; };
 		E7F814FD2605054F00D3DCE4 /* MainTabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarRouter.swift; sourceTree = "<group>"; };
 		E7F814FE2605054F00D3DCE4 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		E7F8151C26050DDC00D3DCE4 /* UserProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileAssembly.swift; sourceTree = "<group>"; };
+		E7F8151D26050DDC00D3DCE4 /* UserProfileContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileContracts.swift; sourceTree = "<group>"; };
+		E7F8151E26050DDC00D3DCE4 /* UserProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePresenter.swift; sourceTree = "<group>"; };
+		E7F8151F26050DDC00D3DCE4 /* UserProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileRouter.swift; sourceTree = "<group>"; };
+		E7F8152026050DDC00D3DCE4 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		E7F8152126050DDC00D3DCE4 /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		E7F8152C2605154100D3DCE4 /* AvatarCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCellAdapter.swift; sourceTree = "<group>"; };
+		E7F8152D2605154100D3DCE4 /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		E7F8152E2605154100D3DCE4 /* AvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		E7F8153E2605154100D3DCE4 /* UserInfoCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCellAdapter.swift; sourceTree = "<group>"; };
+		E7F815402605154100D3DCE4 /* UserInfoCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCellDelegate.swift; sourceTree = "<group>"; };
+		E7F815412605154100D3DCE4 /* UserInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		E7F815422605154100D3DCE4 /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		E7F815442605154100D3DCE4 /* UserInfoContainerCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoContainerCellDelegate.swift; sourceTree = "<group>"; };
+		E7F815452605154100D3DCE4 /* UserInfoContainerCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoContainerCellAdapter.swift; sourceTree = "<group>"; };
+		E7F815462605154100D3DCE4 /* UserInfoContainerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoContainerCell.swift; sourceTree = "<group>"; };
+		E7F815472605154100D3DCE4 /* UserInfoContainerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoContainerCell.xib; sourceTree = "<group>"; };
+		E7F8155C2605167300D3DCE4 /* ListSectionControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionControllerExtension.swift; sourceTree = "<group>"; };
+		E7F81560260516D800D3DCE4 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
+		E7F815682605179C00D3DCE4 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7F8157126051E2100D3DCE4 /* LogoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoutCell.xib; sourceTree = "<group>"; };
+		E7F8157326051E2100D3DCE4 /* LogoutCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutCellDelegate.swift; sourceTree = "<group>"; };
+		E7F8157426051E2100D3DCE4 /* LogoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutCell.swift; sourceTree = "<group>"; };
+		E7F8157526051E2100D3DCE4 /* LogoutCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutCellAdapter.swift; sourceTree = "<group>"; };
 		E9629CE2C4E8BA419B0820DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAABAA06F57B7C8E1368014A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC67E6C8B89B25C7BBA0D9C7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -246,6 +294,7 @@
 		1D6D4B7B63A595E7AFEF11F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7F8155F260516CE00D3DCE4 /* Profile */,
 				D46045DBD77291600A20CD3C /* Owner.swift */,
 				DCE7E7D1C7F9114305BD9C73 /* Repo.swift */,
 			);
@@ -462,6 +511,7 @@
 		B743E3816592FBA84AD1E1E9 /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				E7F815672605179200D3DCE4 /* BaseCells */,
 				DD08277B4EC29D69ED9C1FC4 /* BaseRouter */,
 				3618A5F620D22F295F3816F8 /* BaseViewController */,
 				F4403B72359F157DACB20265 /* Protocols */,
@@ -546,6 +596,7 @@
 		E7F814F52605049800D3DCE4 /* Authorized */ = {
 			isa = PBXGroup;
 			children = (
+				E7F8151B26050D9000D3DCE4 /* UserProfile */,
 				E7F814F92605054F00D3DCE4 /* MainTabBarController */,
 			);
 			path = Authorized;
@@ -568,6 +619,122 @@
 				E7F814FE2605054F00D3DCE4 /* MainTabBarViewController.swift */,
 			);
 			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		E7F8151B26050D9000D3DCE4 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E7F81529260514E100D3DCE4 /* Cells */,
+				E7F8151C26050DDC00D3DCE4 /* UserProfileAssembly.swift */,
+				E7F8151D26050DDC00D3DCE4 /* UserProfileContracts.swift */,
+				E7F8151E26050DDC00D3DCE4 /* UserProfilePresenter.swift */,
+				E7F8151F26050DDC00D3DCE4 /* UserProfileRouter.swift */,
+				E7F8152026050DDC00D3DCE4 /* UserProfileViewController.swift */,
+				E7F8152126050DDC00D3DCE4 /* UserProfileViewController.xib */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		E7F81529260514E100D3DCE4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8152B2605154100D3DCE4 /* Avatar */,
+				E7F8152F2605154100D3DCE4 /* UserInfoContainer */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E7F8152B2605154100D3DCE4 /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8152C2605154100D3DCE4 /* AvatarCellAdapter.swift */,
+				E7F8152D2605154100D3DCE4 /* AvatarCell.swift */,
+				E7F8152E2605154100D3DCE4 /* AvatarCell.xib */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		E7F8152F2605154100D3DCE4 /* UserInfoContainer */ = {
+			isa = PBXGroup;
+			children = (
+				E7F815302605154100D3DCE4 /* Cells */,
+				E7F815432605154100D3DCE4 /* Delegate */,
+				E7F815452605154100D3DCE4 /* UserInfoContainerCellAdapter.swift */,
+				E7F815462605154100D3DCE4 /* UserInfoContainerCell.swift */,
+				E7F815472605154100D3DCE4 /* UserInfoContainerCell.xib */,
+			);
+			path = UserInfoContainer;
+			sourceTree = "<group>";
+		};
+		E7F815302605154100D3DCE4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8157026051E2100D3DCE4 /* LogoutCell */,
+				E7F8153D2605154100D3DCE4 /* UserInfo */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E7F8153D2605154100D3DCE4 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8153E2605154100D3DCE4 /* UserInfoCellAdapter.swift */,
+				E7F8153F2605154100D3DCE4 /* Delegate */,
+				E7F815412605154100D3DCE4 /* UserInfoCell.swift */,
+				E7F815422605154100D3DCE4 /* UserInfoCell.xib */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		E7F8153F2605154100D3DCE4 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E7F815402605154100D3DCE4 /* UserInfoCellDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E7F815432605154100D3DCE4 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E7F815442605154100D3DCE4 /* UserInfoContainerCellDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E7F8155F260516CE00D3DCE4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E7F81560260516D800D3DCE4 /* Containers.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E7F815672605179200D3DCE4 /* BaseCells */ = {
+			isa = PBXGroup;
+			children = (
+				E7F815682605179C00D3DCE4 /* BaseCollectionViewCell.swift */,
+			);
+			path = BaseCells;
+			sourceTree = "<group>";
+		};
+		E7F8157026051E2100D3DCE4 /* LogoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8157126051E2100D3DCE4 /* LogoutCell.xib */,
+				E7F8157226051E2100D3DCE4 /* Delegate */,
+				E7F8157426051E2100D3DCE4 /* LogoutCell.swift */,
+				E7F8157526051E2100D3DCE4 /* LogoutCellAdapter.swift */,
+			);
+			path = LogoutCell;
+			sourceTree = "<group>";
+		};
+		E7F8157226051E2100D3DCE4 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8157326051E2100D3DCE4 /* LogoutCellDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		EAD714346E433A6234227780 = {
@@ -639,6 +806,7 @@
 				C076E14F1A749E1F7A73A606 /* StringExtension.swift */,
 				953DE07D68A060423E96524F /* UICollectionViewCellExtension.swift */,
 				95822360857670D5C99BF9E6 /* UIImageViewExtension.swift */,
+				E7F8155C2605167300D3DCE4 /* ListSectionControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -713,6 +881,11 @@
 				9A9C04E348115CF24DF49E6A /* Localizable.strings in Resources */,
 				1AA72C68D8A3E81287C774B2 /* MRLoaderView.xib in Resources */,
 				6B82C9C3470D0A2C8527D754 /* strings-swift4.stencil in Resources */,
+				E7F8157626051E2100D3DCE4 /* LogoutCell.xib in Resources */,
+				E7F8154A2605154100D3DCE4 /* AvatarCell.xib in Resources */,
+				E7F8155A2605154100D3DCE4 /* UserInfoContainerCell.xib in Resources */,
+				E7F815562605154100D3DCE4 /* UserInfoCell.xib in Resources */,
+				E7F8152726050DDC00D3DCE4 /* UserProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +956,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F8152526050DDC00D3DCE4 /* UserProfileRouter.swift in Sources */,
+				E7F815572605154100D3DCE4 /* UserInfoContainerCellDelegate.swift in Sources */,
 				98760464309B14981C3C35AD /* AdapterManager.swift in Sources */,
 				7B5635B106778B48130A502A /* AnimationProcess.swift in Sources */,
 				E680CE7970C2026280916B16 /* ApiError.swift in Sources */,
@@ -794,28 +969,37 @@
 				08083B7932677CF09F5BE12F /* AppTheme.swift in Sources */,
 				9DC00797C2605083CEE7D1D8 /* AttributeStringBuilder.swift in Sources */,
 				95FC620FD463607507B9DB84 /* BaseCollectionViewController.swift in Sources */,
+				E7F815552605154100D3DCE4 /* UserInfoCell.swift in Sources */,
 				3F396865FED28EC920E26238 /* BaseNavigationController.swift in Sources */,
 				FCC0EB17A1B4B78AC2FEE70B /* BaseViewController.swift in Sources */,
+				E7F8152426050DDC00D3DCE4 /* UserProfilePresenter.swift in Sources */,
 				8D1174A946F4EE8BF2724EED /* BorderedView.swift in Sources */,
 				457746EECFFC880163333F32 /* CALayer+Animation.swift in Sources */,
 				6F2B0A52F991DF2AA1A700F9 /* CAPropertyAnimation+Key.swift in Sources */,
 				2548637076E527F9ACACF9A2 /* Chaperone.swift in Sources */,
+				E7F815692605179C00D3DCE4 /* BaseCollectionViewCell.swift in Sources */,
 				E7F815012605054F00D3DCE4 /* MainTabBarPresenter.swift in Sources */,
 				861B1D6DF492DAE21ABA413F /* ClearableManager.swift in Sources */,
+				E7F81561260516D800D3DCE4 /* Containers.swift in Sources */,
+				E7F8157826051E2100D3DCE4 /* LogoutCell.swift in Sources */,
 				1CB96070DE5967E479D46124 /* CodableExtension.swift in Sources */,
 				A21E441D3A40F035F6C556CB /* Configuration.swift in Sources */,
 				3AC2303B7D4F1C46E9908FE8 /* Constants.swift in Sources */,
+				E7F8157726051E2100D3DCE4 /* LogoutCellDelegate.swift in Sources */,
 				FCFB665A860C37CC9D2F21CB /* Converter.swift in Sources */,
 				82BD2678AF4C4BBA02E76300 /* DependenciesConfiguration.swift in Sources */,
 				7D123ABCC9A3680503397BA9 /* Double+Math.swift in Sources */,
 				957CE86F1FB675CBA6F69043 /* ErrorCodes.swift in Sources */,
 				06D69138FACE26C58E1C3950 /* ErrorHandling.swift in Sources */,
 				E7F814FF2605054F00D3DCE4 /* MainTabBarAssembly.swift in Sources */,
+				E7F815492605154100D3DCE4 /* AvatarCell.swift in Sources */,
 				49775D9C4F85009193B2B346 /* ErrorHandlingRoute.swift in Sources */,
 				E7F815002605054F00D3DCE4 /* MainTabBarContracts.swift in Sources */,
+				E7F815482605154100D3DCE4 /* AvatarCellAdapter.swift in Sources */,
 				C3FEC4C54CFE06B1905D2338 /* IdPaging.swift in Sources */,
 				36A3FDFA0D7B776385D4DC75 /* InfinityLoading.swift in Sources */,
 				ABE21A1489840449C607BCB2 /* Language.swift in Sources */,
+				E7F8152326050DDC00D3DCE4 /* UserProfileContracts.swift in Sources */,
 				ABE6D9D82632DA9226295E73 /* LanguageBehavior.swift in Sources */,
 				F397C74395EB6CA8B895803F /* LoadableView.swift in Sources */,
 				4D05A86AAC185B39830A5AFC /* Localizable.swift in Sources */,
@@ -823,13 +1007,17 @@
 				2B5B91A7C03CA32E673771F1 /* MRAppAlertController.swift in Sources */,
 				E599448AB51DD096FA17BFE1 /* MRLoaderManager.swift in Sources */,
 				76BE11B7F03D174D36F1454E /* MRLoaderView.swift in Sources */,
+				E7F815542605154100D3DCE4 /* UserInfoCellDelegate.swift in Sources */,
 				029C8F0491661A47C2962932 /* MainAppCoordinator.swift in Sources */,
 				8C12828E57F98AB04F77095B /* MoyaAPIRequest.swift in Sources */,
 				E2E95D61860C2F9040F654FB /* MoyaPluginFactory.swift in Sources */,
 				4E451A2A09E6B319F8C0B5AE /* MultiMoyaProvider.swift in Sources */,
+				E7F8152626050DDC00D3DCE4 /* UserProfileViewController.swift in Sources */,
+				E7F815582605154100D3DCE4 /* UserInfoContainerCellAdapter.swift in Sources */,
 				E7F815032605054F00D3DCE4 /* MainTabBarViewController.swift in Sources */,
 				EDF48754DE7F0715D0864B92 /* NSObjectExtension.swift in Sources */,
 				B63050F8E1DD557FA500E78F /* Operators.swift in Sources */,
+				E7F8157926051E2100D3DCE4 /* LogoutCellAdapter.swift in Sources */,
 				DB00749DB86BB17BD82E162C /* Owner.swift in Sources */,
 				8750184BC64E5D7E97D14489 /* Paginator.swift in Sources */,
 				64BA7AD4F4E603AD0B08E414 /* RefreshIndicator.swift in Sources */,
@@ -837,12 +1025,16 @@
 				A83A51F031A062929681B6F7 /* RepoService.swift in Sources */,
 				0062206D521A4822121DFBDF /* RepositoriesRequest.swift in Sources */,
 				E7F815022605054F00D3DCE4 /* MainTabBarRouter.swift in Sources */,
+				E7F815592605154100D3DCE4 /* UserInfoContainerCell.swift in Sources */,
 				CD3D5DD1EF5C4E284AFFC81A /* RippleView.swift in Sources */,
 				CE2AFEE90D590D1D35D6868A /* Router.swift in Sources */,
 				4F8ECA693BD9ED07EC94CDA8 /* ShadowView.swift in Sources */,
 				057A055DED77D957F40E6434 /* ShareRoute.swift in Sources */,
+				E7F8155D2605167300D3DCE4 /* ListSectionControllerExtension.swift in Sources */,
 				C9033B01FA126A80BB886414 /* ShedulerProvider.swift in Sources */,
+				E7F815532605154100D3DCE4 /* UserInfoCellAdapter.swift in Sources */,
 				4E073A2AFF26D9B70DBE6BBE /* SimpleLogger.swift in Sources */,
+				E7F8152226050DDC00D3DCE4 /* UserProfileAssembly.swift in Sources */,
 				458B0C4B54237F49E0A9045F /* SpringIndicator.swift in Sources */,
 				4226FD7835FB39C28A7E854B /* StringExtension.swift in Sources */,
 				FB75812988E58151BF54FEC4 /* UICollectionViewCellExtension.swift in Sources */,

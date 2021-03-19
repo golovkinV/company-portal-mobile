@@ -13,3 +13,9 @@
 "api_errors.code.too_many_requests" = "Привышено число запросов к серверу";
 "api_errors.no_internet" = "Отсутствует интернет-соединение";
 "api_errors.code.unprocessable_entity" = "Контент больше не существует";
+
+// MARK: - Tab Bar
+
+"tabBar.profile" = "Профиль";
+"tabBar.shop" = "Магазин";
+"tabBar.tasks" = "Задачи";
