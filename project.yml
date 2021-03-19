@@ -1,0 +1,19 @@
+name: CompanyPortal # The name of the App
+options: # Some general settings for the projectproject.yml
+  createIntermediateGroups: true # If the folders are nested, also nest the groups in Xcode
+  indentWidth: 4 # indent by 4 spaces
+  tabWidth: 4 # a tab is 4 spaces
+  bundleIdPrefix: "com.study"
+targets:
+  CompanyPortal:
+    preBuildScripts:
+      #SwiftGen
+      - script: |
+                $PODS_ROOT/SwiftGen/bin/swiftgen strings "${SRCROOT}/${PROJECT_NAME}/Resources/Localization/en.lproj/Localizable.strings" --output "${SRCROOT}/${PROJECT_NAME}/Resources/Localization/Localizable.swift" -p "${SRCROOT}/${PROJECT_NAME}/Resources/Localization/strings-swift4.stencil"
+        name: SwiftGen
+      #SwiftGen
+    type: application
+    platform: iOS
+    deploymentTarget: "13.1"
+    sources:  
+      - path: CompanyPortal

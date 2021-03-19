@@ -1,0 +1,99 @@
+PODS:
+  - Alamofire (5.4.1)
+  - DITranquillity (3.7.1):
+    - SwiftLazy
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - InputMask (5.0.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - KeychainAccess (3.2.0)
+  - Kingfisher (5.7.1)
+  - Localize-Swift (3.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - netfox (1.19.0)
+  - PinLayout (1.9.0)
+  - Realm (3.21.0):
+    - Realm/Headers (= 3.21.0)
+  - Realm/Headers (3.21.0)
+  - RealmSwift (3.21.0):
+    - Realm (= 3.21.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SwiftFormat/CLI (0.43.5)
+  - SwiftGen (6.4.0)
+  - SwiftLazy (1.1.7)
+
+DEPENDENCIES:
+  - DITranquillity (= 3.7.1)
+  - IGListKit (= 3.4.0)
+  - InputMask (= 5.0.0)
+  - IQKeyboardManagerSwift (= 6.2.0)
+  - KeychainAccess (= 3.2.0)
+  - Kingfisher (= 5.7.1)
+  - Localize-Swift (= 3.0.0)
+  - Moya/RxSwift (= 14.0.0)
+  - netfox
+  - PinLayout (= 1.9.0)
+  - RealmSwift (= 3.21.0)
+  - RxCocoa (= 5.1.1)
+  - RxSwift (= 5.1.1)
+  - SwiftFormat/CLI (~> 0.43.0)
+  - SwiftGen (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DITranquillity
+    - IGListKit
+    - InputMask
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - Kingfisher
+    - Localize-Swift
+    - Moya
+    - netfox
+    - PinLayout
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftFormat
+    - SwiftGen
+    - SwiftLazy
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  DITranquillity: edf53a8589bfc09233813b2be7bbe7bd0b166284
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  InputMask: 8a10dbc8ac3f94f0a5b4c380424bbe6795c69b16
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  Localize-Swift: 1363ec008c6972dced79a80ac72c71d14e98db44
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  netfox: efeec1d23406df6cd605212f09a40957bb5654eb
+  PinLayout: 465e45d2fbed082f5a62cc2d0e14759bbc28b14b
+  Realm: 38e9dcb19104b58407167d99f70d4995f7c16023
+  RealmSwift: 3183cc1ad48378fbcd634311b22c0e6c44021152
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftFormat: 352ea545e3e13cfd7a449e621c1f3c2e244d4906
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  SwiftLazy: dcb1edc6c2b633ba2e68f28554d9dd6d1c0bfd13
+
+PODFILE CHECKSUM: 102f644ba21b49b4a5e9cb6fd8a4cda0b065f161
+
+COCOAPODS: 1.10.1
