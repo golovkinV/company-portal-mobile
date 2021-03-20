@@ -18,13 +18,6 @@ final class TasksListViewController: BaseCollectionViewController {
             TaskCellAdapterCreator()
         ]
     }
-    
-    override func setupViews() {
-//        collectionView.collectionViewLayout = ListCollectionViewLayout(stickyHeaders: false,
-//                                                                       scrollDirection: .vertical,
-//                                                                       topContentInset: 0,
-//                                                                       stretchToEdge: false)
-    }
 }
 
 extension TasksListViewController: TasksListViewBehavior {

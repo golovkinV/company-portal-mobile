@@ -31,7 +31,7 @@ public struct MainTheme: AppTheme {
         navbar.isTranslucent = true
         navbar.isOpaque = false
         navbar.titleTextAttributes = [
-            .foregroundColor: selectedColor,
+            .foregroundColor: white,
             .font: UIFont.font(ofSize: 17, weight: .medium)
         ]
         navbar.barTintColor = baseColor

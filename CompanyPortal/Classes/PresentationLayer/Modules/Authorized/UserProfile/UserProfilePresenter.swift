@@ -34,7 +34,7 @@ extension UserProfilePresenter: UserProfileEventHandler {
         let profileAvatar = ProfileAvatar(fullName: "Sasuke Uchiha", avatarImage: avatar)
         let profileItems: [ProfileInfoItem] = [
             .init(title: "Должность", value: "Инженер-программист"),
-            .init(title: "Статус", value: "VIP - действует скидка 10% в корпоративном магазине"),
+            .init(title: "Статус", value: "Middle - действует скидка 10% в корпоративном магазине"),
             .init(title: "Всего наград", value: "10"),
             .init(title: "Всего яблок", value: "10")
         ]

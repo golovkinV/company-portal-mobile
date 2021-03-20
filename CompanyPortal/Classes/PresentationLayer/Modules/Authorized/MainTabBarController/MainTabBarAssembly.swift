@@ -3,7 +3,7 @@ import UIKit
 // MARK: - Assembly
 
 final class MainTabBarAssembly {
-    class func createModule(selectedScreenId: Int = 0,
+    class func createModule(selectedScreenId: Int = 1,
                             parent: Router? = nil) -> MainTabBarViewController {
         let module = MainTabBarViewController() 
         let router = MainTabBarRouter(view: module, parent: parent)
@@ -11,7 +11,8 @@ final class MainTabBarAssembly {
         module.handler.bind(view: module, router: router)
         let controllers: [UIViewController] = [
             UserProfileAssembly.createModule(),
-            TasksListAssembly.createModule()
+            TasksListAssembly.createModule(),
+            ShopAssembly.createModule()
         ]
         module.configure(controllers: controllers)
         module.selectModule(index: selectedScreenId)
