@@ -44,7 +44,8 @@ private class PresentersPart: DIPart {
     static let parts: [DIPart.Type] = [
         MoyaPluginFactoryPart.self,
         MainTabBarPart.self,
-        UserProfilePart.self
+        UserProfilePart.self,
+        TasksListPart.self
     ]
 
     static func load(container: DIContainer) {

@@ -10,7 +10,8 @@ final class MainTabBarAssembly {
         module.handler = MainAppCoordinator.shared.container.resolve()
         module.handler.bind(view: module, router: router)
         let controllers: [UIViewController] = [
-            UserProfileAssembly.createModule()
+            UserProfileAssembly.createModule(),
+            TasksListAssembly.createModule()
         ]
         module.configure(controllers: controllers)
         module.selectModule(index: selectedScreenId)
