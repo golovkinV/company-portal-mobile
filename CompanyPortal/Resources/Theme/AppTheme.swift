@@ -26,6 +26,8 @@ public struct MainTheme: AppTheme {
 
     func configureNavBar() {
         let navbar = UINavigationBar.appearance()
+        navbar.setBackgroundImage(.init(), for: .default)
+        navbar.shadowImage = .init()
         navbar.isTranslucent = true
         navbar.isOpaque = false
         navbar.titleTextAttributes = [

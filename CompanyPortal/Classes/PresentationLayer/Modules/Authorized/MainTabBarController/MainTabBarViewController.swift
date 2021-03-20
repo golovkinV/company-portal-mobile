@@ -46,7 +46,12 @@ final class MainTabBarViewController: UITabBarController {
         profileNavigationController.title = text.profile
         profileNavigationController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_profile")
         
-        viewControllers = [profileViewController]
+        let tasksViewController = controllers[1]
+        let tasksNavigationController = BaseNavigationController(rootViewController: tasksViewController)
+        tasksNavigationController.title = text.tasks
+        tasksNavigationController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_tasks")
+        
+        viewControllers = [profileNavigationController, tasksNavigationController]
     }
     
     // MARK: - Private
