@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.4.1)
   - DITranquillity (3.7.1):
     - SwiftLazy
+  - FittedSheets (2.0.0)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
@@ -36,6 +37,7 @@ PODS:
 
 DEPENDENCIES:
   - DITranquillity (= 3.7.1)
+  - FittedSheets (= 2.0.0)
   - IGListKit (= 3.4.0)
   - InputMask (= 5.0.0)
   - IQKeyboardManagerSwift (= 6.2.0)
@@ -55,6 +57,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - DITranquillity
+    - FittedSheets
     - IGListKit
     - InputMask
     - IQKeyboardManagerSwift
@@ -76,6 +79,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   DITranquillity: edf53a8589bfc09233813b2be7bbe7bd0b166284
+  FittedSheets: cd4ce0176236f9ba85cace2e78bc30121ac35180
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   InputMask: 8a10dbc8ac3f94f0a5b4c380424bbe6795c69b16
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
@@ -94,6 +98,6 @@ SPEC CHECKSUMS:
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLazy: dcb1edc6c2b633ba2e68f28554d9dd6d1c0bfd13
 
-PODFILE CHECKSUM: 102f644ba21b49b4a5e9cb6fd8a4cda0b065f161
+PODFILE CHECKSUM: 39cafb4f054f8eb6f27576ed43b413662ac1bae2
 
 COCOAPODS: 1.10.1

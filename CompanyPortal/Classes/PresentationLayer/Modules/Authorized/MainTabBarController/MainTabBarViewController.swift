@@ -51,7 +51,12 @@ final class MainTabBarViewController: UITabBarController {
         tasksNavigationController.title = text.tasks
         tasksNavigationController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_tasks")
         
-        viewControllers = [profileNavigationController, tasksNavigationController]
+        let shopViewController = controllers[2]
+        let shopNavigationController = BaseNavigationController(rootViewController: shopViewController)
+        shopViewController.title = text.shop
+        shopViewController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_shop")
+        
+        viewControllers = [profileNavigationController, tasksNavigationController, shopNavigationController]
     }
     
     // MARK: - Private

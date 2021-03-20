@@ -71,6 +71,16 @@
 		E2E95D61860C2F9040F654FB /* MoyaPluginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396B3137C84C6E18CBFDA6B1 /* MoyaPluginFactory.swift */; };
 		E599448AB51DD096FA17BFE1 /* MRLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D001B3A9620A89B7C74296D /* MRLoaderManager.swift */; };
 		E680CE7970C2026280916B16 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703992315479A53B28A0D90 /* ApiError.swift */; };
+		E7DAE2162605922900B83FAB /* ShopAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE2102605922900B83FAB /* ShopAssembly.swift */; };
+		E7DAE2172605922900B83FAB /* ShopContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE2112605922900B83FAB /* ShopContracts.swift */; };
+		E7DAE2182605922900B83FAB /* ShopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE2122605922900B83FAB /* ShopPresenter.swift */; };
+		E7DAE2192605922900B83FAB /* ShopRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE2132605922900B83FAB /* ShopRouter.swift */; };
+		E7DAE21A2605922900B83FAB /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE2142605922900B83FAB /* ShopViewController.swift */; };
+		E7DAE21B2605922900B83FAB /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DAE2152605922900B83FAB /* ShopViewController.xib */; };
+		E7DAE221260592A600B83FAB /* ProductCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE21E260592A600B83FAB /* ProductCellAdapter.swift */; };
+		E7DAE222260592A600B83FAB /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DAE21F260592A600B83FAB /* ProductCell.xib */; };
+		E7DAE223260592A600B83FAB /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE220260592A600B83FAB /* ProductCell.swift */; };
+		E7DAE227260594E400B83FAB /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAE226260594E400B83FAB /* ProductModel.swift */; };
 		E7F814FF2605054F00D3DCE4 /* MainTabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F814FA2605054F00D3DCE4 /* MainTabBarAssembly.swift */; };
 		E7F815002605054F00D3DCE4 /* MainTabBarContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F814FB2605054F00D3DCE4 /* MainTabBarContracts.swift */; };
 		E7F815012605054F00D3DCE4 /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F814FC2605054F00D3DCE4 /* MainTabBarPresenter.swift */; };
@@ -191,6 +201,16 @@
 		D86C2A16570BFC7FF096CC74 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		D90446F2E34F4456D87B5582 /* RefreshIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshIndicator.swift; sourceTree = "<group>"; };
 		DCE7E7D1C7F9114305BD9C73 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		E7DAE2102605922900B83FAB /* ShopAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAssembly.swift; sourceTree = "<group>"; };
+		E7DAE2112605922900B83FAB /* ShopContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopContracts.swift; sourceTree = "<group>"; };
+		E7DAE2122605922900B83FAB /* ShopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPresenter.swift; sourceTree = "<group>"; };
+		E7DAE2132605922900B83FAB /* ShopRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopRouter.swift; sourceTree = "<group>"; };
+		E7DAE2142605922900B83FAB /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		E7DAE2152605922900B83FAB /* ShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
+		E7DAE21E260592A600B83FAB /* ProductCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellAdapter.swift; sourceTree = "<group>"; };
+		E7DAE21F260592A600B83FAB /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		E7DAE220260592A600B83FAB /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		E7DAE226260594E400B83FAB /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		E7F814FA2605054F00D3DCE4 /* MainTabBarAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarAssembly.swift; sourceTree = "<group>"; };
 		E7F814FB2605054F00D3DCE4 /* MainTabBarContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarContracts.swift; sourceTree = "<group>"; };
 		E7F814FC2605054F00D3DCE4 /* MainTabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenter.swift; sourceTree = "<group>"; };
@@ -314,6 +334,7 @@
 		1D6D4B7B63A595E7AFEF11F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7DAE225260594D500B83FAB /* Product */,
 				E7F815A42605807B00D3DCE4 /* Tasks */,
 				E7F8155F260516CE00D3DCE4 /* Profile */,
 				D46045DBD77291600A20CD3C /* Owner.swift */,
@@ -614,9 +635,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7DAE20F2605921500B83FAB /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				E7DAE21D2605927E00B83FAB /* Cells */,
+				E7DAE2102605922900B83FAB /* ShopAssembly.swift */,
+				E7DAE2112605922900B83FAB /* ShopContracts.swift */,
+				E7DAE2122605922900B83FAB /* ShopPresenter.swift */,
+				E7DAE2132605922900B83FAB /* ShopRouter.swift */,
+				E7DAE2142605922900B83FAB /* ShopViewController.swift */,
+				E7DAE2152605922900B83FAB /* ShopViewController.xib */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		E7DAE21D2605927E00B83FAB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E7DAE21E260592A600B83FAB /* ProductCellAdapter.swift */,
+				E7DAE21F260592A600B83FAB /* ProductCell.xib */,
+				E7DAE220260592A600B83FAB /* ProductCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E7DAE225260594D500B83FAB /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				E7DAE226260594E400B83FAB /* ProductModel.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		E7F814F52605049800D3DCE4 /* Authorized */ = {
 			isa = PBXGroup;
 			children = (
+				E7DAE20F2605921500B83FAB /* Shop */,
 				E7F815942605213A00D3DCE4 /* TasksList */,
 				E7F8151B26050D9000D3DCE4 /* UserProfile */,
 				E7F814F92605054F00D3DCE4 /* MainTabBarController */,
@@ -933,6 +987,7 @@
 				2ABA9F2FB3E0C555786CC7DB /* InfoPlist.strings in Resources */,
 				F524C00E2A306D1A6B8813D9 /* LaunchScreen.storyboard in Resources */,
 				9A9C04E348115CF24DF49E6A /* Localizable.strings in Resources */,
+				E7DAE21B2605922900B83FAB /* ShopViewController.xib in Resources */,
 				1AA72C68D8A3E81287C774B2 /* MRLoaderView.xib in Resources */,
 				6B82C9C3470D0A2C8527D754 /* strings-swift4.stencil in Resources */,
 				E7F8157626051E2100D3DCE4 /* LogoutCell.xib in Resources */,
@@ -940,6 +995,7 @@
 				E7F8154A2605154100D3DCE4 /* AvatarCell.xib in Resources */,
 				E7F8155A2605154100D3DCE4 /* UserInfoContainerCell.xib in Resources */,
 				E7F815A02605215900D3DCE4 /* TasksListViewController.xib in Resources */,
+				E7DAE222260592A600B83FAB /* ProductCell.xib in Resources */,
 				E7F815562605154100D3DCE4 /* UserInfoCell.xib in Resources */,
 				E7F8152726050DDC00D3DCE4 /* UserProfileViewController.xib in Resources */,
 			);
@@ -1025,9 +1081,11 @@
 				671D3214563D5E9FDBAACD1A /* AppRouter.swift in Sources */,
 				08083B7932677CF09F5BE12F /* AppTheme.swift in Sources */,
 				9DC00797C2605083CEE7D1D8 /* AttributeStringBuilder.swift in Sources */,
+				E7DAE21A2605922900B83FAB /* ShopViewController.swift in Sources */,
 				95FC620FD463607507B9DB84 /* BaseCollectionViewController.swift in Sources */,
 				E7F815552605154100D3DCE4 /* UserInfoCell.swift in Sources */,
 				3F396865FED28EC920E26238 /* BaseNavigationController.swift in Sources */,
+				E7DAE221260592A600B83FAB /* ProductCellAdapter.swift in Sources */,
 				FCC0EB17A1B4B78AC2FEE70B /* BaseViewController.swift in Sources */,
 				E7F8152426050DDC00D3DCE4 /* UserProfilePresenter.swift in Sources */,
 				8D1174A946F4EE8BF2724EED /* BorderedView.swift in Sources */,
@@ -1053,6 +1111,7 @@
 				E7F814FF2605054F00D3DCE4 /* MainTabBarAssembly.swift in Sources */,
 				E7F815492605154100D3DCE4 /* AvatarCell.swift in Sources */,
 				49775D9C4F85009193B2B346 /* ErrorHandlingRoute.swift in Sources */,
+				E7DAE2162605922900B83FAB /* ShopAssembly.swift in Sources */,
 				E7F815002605054F00D3DCE4 /* MainTabBarContracts.swift in Sources */,
 				E7F815482605154100D3DCE4 /* AvatarCellAdapter.swift in Sources */,
 				C3FEC4C54CFE06B1905D2338 /* IdPaging.swift in Sources */,
@@ -1067,6 +1126,7 @@
 				2B5B91A7C03CA32E673771F1 /* MRAppAlertController.swift in Sources */,
 				E599448AB51DD096FA17BFE1 /* MRLoaderManager.swift in Sources */,
 				76BE11B7F03D174D36F1454E /* MRLoaderView.swift in Sources */,
+				E7DAE2182605922900B83FAB /* ShopPresenter.swift in Sources */,
 				E7F815542605154100D3DCE4 /* UserInfoCellDelegate.swift in Sources */,
 				E7F8159F2605215900D3DCE4 /* TasksListViewController.swift in Sources */,
 				029C8F0491661A47C2962932 /* MainAppCoordinator.swift in Sources */,
@@ -1076,10 +1136,12 @@
 				E7F8152626050DDC00D3DCE4 /* UserProfileViewController.swift in Sources */,
 				E7F815582605154100D3DCE4 /* UserInfoContainerCellAdapter.swift in Sources */,
 				E7F815032605054F00D3DCE4 /* MainTabBarViewController.swift in Sources */,
+				E7DAE223260592A600B83FAB /* ProductCell.swift in Sources */,
 				EDF48754DE7F0715D0864B92 /* NSObjectExtension.swift in Sources */,
 				B63050F8E1DD557FA500E78F /* Operators.swift in Sources */,
 				E7F8157926051E2100D3DCE4 /* LogoutCellAdapter.swift in Sources */,
 				DB00749DB86BB17BD82E162C /* Owner.swift in Sources */,
+				E7DAE2172605922900B83FAB /* ShopContracts.swift in Sources */,
 				8750184BC64E5D7E97D14489 /* Paginator.swift in Sources */,
 				64BA7AD4F4E603AD0B08E414 /* RefreshIndicator.swift in Sources */,
 				B3FBFC65CAA581432DEDDBA4 /* Repo.swift in Sources */,
@@ -1093,6 +1155,7 @@
 				4F8ECA693BD9ED07EC94CDA8 /* ShadowView.swift in Sources */,
 				057A055DED77D957F40E6434 /* ShareRoute.swift in Sources */,
 				E7F815AD2605878800D3DCE4 /* TaskCell.swift in Sources */,
+				E7DAE227260594E400B83FAB /* ProductModel.swift in Sources */,
 				E7F8155D2605167300D3DCE4 /* ListSectionControllerExtension.swift in Sources */,
 				C9033B01FA126A80BB886414 /* ShedulerProvider.swift in Sources */,
 				E7F815532605154100D3DCE4 /* UserInfoCellAdapter.swift in Sources */,
@@ -1103,6 +1166,7 @@
 				4226FD7835FB39C28A7E854B /* StringExtension.swift in Sources */,
 				FB75812988E58151BF54FEC4 /* UICollectionViewCellExtension.swift in Sources */,
 				65227892673FB9959713A376 /* UIImageViewExtension.swift in Sources */,
+				E7DAE2192605922900B83FAB /* ShopRouter.swift in Sources */,
 				3C3F90694B4AFCBF16AD5E29 /* URLConverter.swift in Sources */,
 				FBBC9E2F63435035715D95DF /* Validator.swift in Sources */,
 				47E3A39885807F79B72AA91F /* ViewControllerEventHandler.swift in Sources */,
