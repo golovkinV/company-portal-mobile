@@ -23,7 +23,8 @@ target 'CompanyPortal' do
     pod 'IGListKit', '3.4.0'
     pod 'InputMask', '5.0.0'
     pod 'PinLayout', '1.9.0'
-
+    pod 'FittedSheets', '2.0.0'
+    
     # Scripts
     pod 'SwiftGen', '~> 6.0'
     pod 'SwiftFormat/CLI', '~> 0.43.0'
