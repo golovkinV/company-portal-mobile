@@ -7,6 +7,8 @@ class BaseCollectionViewController: BaseViewController, ListAdapterDataSource {
     @IBOutlet var collectionView: UICollectionView!
     var items: [ListDiffable] = []
 
+    private weak var refreshActivity: ActivityDisposable?
+    
     // MARK: - Properties
 
     public private(set) var refreshControl: RefreshIndicator?
@@ -125,6 +127,27 @@ class BaseCollectionViewController: BaseViewController, ListAdapterDataSource {
 
     public func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
+    }
+}
+
+extension BaseCollectionViewController: RefreshBehavior {
+    func showRefreshIndicator() -> ActivityDisposable? {
+        if self.refreshActivity?.isDisposed == false {
+            return self.refreshActivity
+        }
+        if self.isRefreshing() == false {
+            self.refreshControl?.startRefreshing()
+        }
+        return self.createActivity()
+    }
+
+    private func createActivity() -> ActivityDisposable? {
+        let activity = ActivityHolder { [weak self] in
+            self?.refreshControl?.endRefreshing()
+        }
+
+        refreshActivity = activity
+        return activity
     }
 }
 

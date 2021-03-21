@@ -34,7 +34,10 @@ private class ServicesPart: DIPart {
         MoyaPluginFactoryPart.self,
         RepoServicePart.self,
         AuthServicePart.self,
-        UserServicePart.self
+        UserServicePart.self,
+        ProfileSerivePart.self,
+        TaskServicePart.self,
+        ShopServicePart.self
     ]
 
     static func load(container: DIContainer) {
