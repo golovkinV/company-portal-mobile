@@ -35,7 +35,8 @@ private class ServicesPart: DIPart {
         RepoServicePart.self,
         AuthServicePart.self,
         UserServicePart.self,
-        ProfileSerivePart.self
+        ProfileSerivePart.self,
+        TaskSerivePart.self
     ]
 
     static func load(container: DIContainer) {

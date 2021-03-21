@@ -2,7 +2,7 @@ import DITranquillity
 import RxCocoa
 import RxSwift
 
-class UserServicePart: DIPart {
+final class UserServicePart: DIPart {
     static func load(container: DIContainer) {
         container.register(UserServiceImp.init)
             .as(UserService.self)

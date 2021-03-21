@@ -111,6 +111,9 @@
 		E648AD8713999B7C9E87A013 /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9DFB0198E56AC8BAD4359 /* MainTabBarPresenter.swift */; };
 		E67350B296F1B78D9A07F6E0 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB433163C9CCA577E51B2CC /* TaskCell.swift */; };
 		E680CE7970C2026280916B16 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703992315479A53B28A0D90 /* ApiError.swift */; };
+		E727FCB72607825200653020 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E727FCB62607825200653020 /* TaskService.swift */; };
+		E727FCBB260782A600653020 /* UserTasksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E727FCBA260782A600653020 /* UserTasksRequest.swift */; };
+		E727FCBF260785CF00653020 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E727FCBE260785CF00653020 /* DateConverter.swift */; };
 		E756222226074F8C008CCC97 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756222126074F8C008CCC97 /* AuthService.swift */; };
 		E7562249260751B1008CCC97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7562248260751B1008CCC97 /* User.swift */; };
 		E756224E2607538C008CCC97 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756224D2607538C008CCC97 /* SignInRequest.swift */; };
@@ -131,6 +134,7 @@
 		E756228326076A77008CCC97 /* ShopStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756228226076A77008CCC97 /* ShopStatus.swift */; };
 		E756228726076BCB008CCC97 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756228626076BCB008CCC97 /* ProfileService.swift */; };
 		E756228B26076C81008CCC97 /* ProfileRequestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756228A26076C81008CCC97 /* ProfileRequestRequest.swift */; };
+		E76BA70026079283001E6D6E /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6FF26079283001E6D6E /* TaskStatus.swift */; };
 		E848391A480119919A1DE610 /* ProductCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B8BD4E73029A80E7920965 /* ProductCellAdapter.swift */; };
 		E91B85C22E0EA4B7D4433478 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0A316498E0624BCD62B89E /* ShopViewController.xib */; };
 		ECA940B70642706D4AEDD574 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F6F33E9DF8DA130476B76F /* TaskCell.xib */; };
@@ -266,6 +270,9 @@
 		E4DA7CDEBF739628097DBBAA /* UserInfoCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCellAdapter.swift; sourceTree = "<group>"; };
 		E4EFB26911415F8B191925E9 /* UserInfoContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoContainerCell.swift; sourceTree = "<group>"; };
 		E6964072D351E194B8A75499 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		E727FCB62607825200653020 /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		E727FCBA260782A600653020 /* UserTasksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTasksRequest.swift; sourceTree = "<group>"; };
+		E727FCBE260785CF00653020 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		E756222126074F8C008CCC97 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E7562248260751B1008CCC97 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E756224D2607538C008CCC97 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
@@ -286,6 +293,7 @@
 		E756228226076A77008CCC97 /* ShopStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopStatus.swift; sourceTree = "<group>"; };
 		E756228626076BCB008CCC97 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		E756228A26076C81008CCC97 /* ProfileRequestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequestRequest.swift; sourceTree = "<group>"; };
+		E76BA6FF26079283001E6D6E /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
 		E9629CE2C4E8BA419B0820DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAABAA06F57B7C8E1368014A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC67E6C8B89B25C7BBA0D9C7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -387,6 +395,7 @@
 			children = (
 				8BA2E223A6538AC04A863E47 /* Converter.swift */,
 				66E8597A81850732FEA3B676 /* URLConverter.swift */,
+				E727FCBE260785CF00653020 /* DateConverter.swift */,
 			);
 			path = Mapping;
 			sourceTree = "<group>";
@@ -493,6 +502,7 @@
 		3B089A0F9134B1E588F2273C /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E727FCB42607811B00653020 /* TaskService */,
 				E756228526076BAE008CCC97 /* ProfileService */,
 				E756226826075D7E008CCC97 /* UserService */,
 				E756221E26074F74008CCC97 /* AuthService */,
@@ -834,6 +844,23 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		E727FCB42607811B00653020 /* TaskService */ = {
+			isa = PBXGroup;
+			children = (
+				E727FCB92607829400653020 /* Request */,
+				E727FCB62607825200653020 /* TaskService.swift */,
+			);
+			path = TaskService;
+			sourceTree = "<group>";
+		};
+		E727FCB92607829400653020 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E727FCBA260782A600653020 /* UserTasksRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		E756221E26074F74008CCC97 /* AuthService */ = {
 			isa = PBXGroup;
 			children = (
@@ -920,6 +947,7 @@
 			isa = PBXGroup;
 			children = (
 				0E488D03A428B75B7A15A95B /* TaskModel.swift */,
+				E76BA6FF26079283001E6D6E /* TaskStatus.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -1217,6 +1245,7 @@
 				2E553B486E89ACE192B9EE05 /* Containers.swift in Sources */,
 				E756225D26075567008CCC97 /* AuthAssembly.swift in Sources */,
 				FCFB665A860C37CC9D2F21CB /* Converter.swift in Sources */,
+				E76BA70026079283001E6D6E /* TaskStatus.swift in Sources */,
 				82BD2678AF4C4BBA02E76300 /* DependenciesConfiguration.swift in Sources */,
 				E756222226074F8C008CCC97 /* AuthService.swift in Sources */,
 				E756226326075692008CCC97 /* StateButton.swift in Sources */,
@@ -1241,6 +1270,7 @@
 				B9831648AF10AC898F63108F /* LogoutCellDelegate.swift in Sources */,
 				2B5B91A7C03CA32E673771F1 /* MRAppAlertController.swift in Sources */,
 				E599448AB51DD096FA17BFE1 /* MRLoaderManager.swift in Sources */,
+				E727FCBF260785CF00653020 /* DateConverter.swift in Sources */,
 				76BE11B7F03D174D36F1454E /* MRLoaderView.swift in Sources */,
 				029C8F0491661A47C2962932 /* MainAppCoordinator.swift in Sources */,
 				144DDCB348219F1133BFFA4B /* MainTabBarAssembly.swift in Sources */,
@@ -1252,6 +1282,7 @@
 				E2E95D61860C2F9040F654FB /* MoyaPluginFactory.swift in Sources */,
 				4E451A2A09E6B319F8C0B5AE /* MultiMoyaProvider.swift in Sources */,
 				EDF48754DE7F0715D0864B92 /* NSObjectExtension.swift in Sources */,
+				E727FCBB260782A600653020 /* UserTasksRequest.swift in Sources */,
 				B63050F8E1DD557FA500E78F /* Operators.swift in Sources */,
 				DB00749DB86BB17BD82E162C /* Owner.swift in Sources */,
 				E756225E26075567008CCC97 /* AuthPresenter.swift in Sources */,
@@ -1285,6 +1316,7 @@
 				AB3B16FB0702BAC16736079C /* TasksListAssembly.swift in Sources */,
 				D5A5C5AC2464B8C9BEB75339 /* TasksListContracts.swift in Sources */,
 				E7562275260761C0008CCC97 /* UserService.swift in Sources */,
+				E727FCB72607825200653020 /* TaskService.swift in Sources */,
 				7DBFEE1506DF5C883FF9F320 /* TasksListPresenter.swift in Sources */,
 				89439EEA88BE6DCA90B4A895 /* TasksListRouter.swift in Sources */,
 				E756225B26075567008CCC97 /* AuthViewController.swift in Sources */,

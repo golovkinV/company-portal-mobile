@@ -7,7 +7,7 @@ public enum SessionStatus: String {
     case unauthorized
 }
 
-class AuthServicePart: DIPart {
+final class AuthServicePart: DIPart {
     static func load(container: DIContainer) {
         container.registerMoyaProvider(verbose: true, cURL: true)
         container.register(AuthServiceImp.init)

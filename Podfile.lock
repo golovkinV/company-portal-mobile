@@ -31,6 +31,7 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - SwiftDate (6.2.0)
   - SwiftFormat/CLI (0.43.5)
   - SwiftGen (6.4.0)
   - SwiftLazy (1.1.7)
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - RealmSwift (= 3.21.0)
   - RxCocoa (= 5.1.1)
   - RxSwift (= 5.1.1)
+  - SwiftDate (= 6.2.0)
   - SwiftFormat/CLI (~> 0.43.0)
   - SwiftGen (~> 6.0)
 
@@ -72,6 +74,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SwiftDate
     - SwiftFormat
     - SwiftGen
     - SwiftLazy
@@ -94,10 +97,11 @@ SPEC CHECKSUMS:
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftDate: d117c3eb6beed72e47d3f4d1e3bc63fa1e66d7c3
   SwiftFormat: 352ea545e3e13cfd7a449e621c1f3c2e244d4906
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLazy: dcb1edc6c2b633ba2e68f28554d9dd6d1c0bfd13
 
-PODFILE CHECKSUM: 39cafb4f054f8eb6f27576ed43b413662ac1bae2
+PODFILE CHECKSUM: a50c996cc4323944b8ea784f96189d59dfc8a3f2
 
 COCOAPODS: 1.10.1

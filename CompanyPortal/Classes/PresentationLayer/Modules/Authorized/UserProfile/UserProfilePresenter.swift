@@ -77,7 +77,7 @@ extension UserProfilePresenter: UserProfileEventHandler {
         profileItems.append(
             contentsOf: [
                 .init(title: "Всего наград", value: "\(user.rewards.count)"),
-                .init(title: "Всего яблок", value: "10")
+                .init(title: "Всего яблок", value: "\(user.money)")
             ]
         )
         

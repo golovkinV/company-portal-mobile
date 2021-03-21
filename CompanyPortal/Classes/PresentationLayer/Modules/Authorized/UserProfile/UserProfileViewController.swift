@@ -15,6 +15,7 @@ final class UserProfileViewController: BaseCollectionViewController {
     
     override func setupViews() {
         view.backgroundColor = MainTheme.shared.baseColor
+        view.alpha = 0
     }
     
     override func adapterCreators() -> [AdapterCreator] {
@@ -27,6 +28,9 @@ final class UserProfileViewController: BaseCollectionViewController {
 
 extension UserProfileViewController: UserProfileViewBehavior {
     func set(items: [ListDiffable]) {
+        if !items.isEmpty {
+            view.alpha = 1
+        }
         self.items = items
         update()
     }

@@ -15,6 +15,7 @@ final class User: NSObject, Decodable {
     var job: Job?
     var shopStatus: ShopStatus?
     var rewards: [Reward] = []
+    var money: Int = .init()
     
     var fullName: String {
         return "\(firstName) \(lastName)"
@@ -35,6 +36,7 @@ final class User: NSObject, Decodable {
             job <- $0["job"]
             shopStatus <- $0["shopStatus"]
             rewards <- $0["rewards"]
+            money <- $0["money"]
         }
     }
 }

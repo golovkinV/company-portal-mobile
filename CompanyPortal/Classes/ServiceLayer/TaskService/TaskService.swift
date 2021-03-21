@@ -2,30 +2,30 @@ import DITranquillity
 import RxCocoa
 import RxSwift
 
-final class ProfileSerivePart: DIPart {
+final class TaskSerivePart: DIPart {
     static func load(container: DIContainer) {
-        container.register(ProfileServiceImp.init)
-            .as(ProfileService.self)
+        container.register(TaskServiceImp.init)
+            .as(TaskService.self)
             .injection(cycle: true, { $0.moyaProvider = $1 })
             .lifetime(.single)
     }
 }
 
-protocol ProfileService {
-    func fetchProfile(for userId: String) -> Single<User>
+protocol TaskService {
+    func fetchTasks(for userId: String) -> Single<[TaskModel]>
 }
 
-final class ProfileServiceImp: ProfileService {
+final class TaskServiceImp: TaskService {
     private let schedulers: SchedulerProvider
-    var moyaProvider: MultiMoyaProvider!
+	var moyaProvider: MultiMoyaProvider!
 
     init(schedulers: SchedulerProvider) {
         self.schedulers = schedulers
     }
     
-    func fetchProfile(for userId: String) -> Single<User> {
+    func fetchTasks(for userId: String) -> Single<[TaskModel]> {
         Single.deferred { [unowned self] in
-            let request = ProfileRequest(userId: userId)
+            let request = UserTasksRequest(userId: userId)
             return self.moyaProvider.request(request)
         }
         .subscribeOn(schedulers.background)
