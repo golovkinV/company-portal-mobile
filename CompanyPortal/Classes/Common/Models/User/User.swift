@@ -11,7 +11,15 @@ final class User: NSObject, Decodable {
     var id: String = .init()
     var firstName: String = .init()
     var lastName: String = .init()
-
+    var avatar: String = .init()
+    var job: Job?
+    var shopStatus: ShopStatus?
+    var rewards: [Reward] = []
+    
+    var fullName: String {
+        return "\(firstName) \(lastName)"
+    }
+    
     init(id: String, firstName: String, lastName: String) {
         self.id = id
         self.firstName = firstName
@@ -24,6 +32,9 @@ final class User: NSObject, Decodable {
             id <- $0["id"]
             firstName <- $0["firstName"]
             lastName <- $0["lastName"]
+            job <- $0["job"]
+            shopStatus <- $0["shopStatus"]
+            rewards <- $0["rewards"]
         }
     }
 }
