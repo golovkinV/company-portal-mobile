@@ -29,7 +29,11 @@ final class TasksListPresenter {
 }
 
 extension TasksListPresenter: TasksListEventHandler {
-
+    
+    func openTaskDetail(_ item: TaskModel) {
+        router.openTaskDetail(for: item.id)
+    }
+    
     func didLoad() {
         loaderActivity = view.showLoading(fullscreen: true)
         fetchTasks()

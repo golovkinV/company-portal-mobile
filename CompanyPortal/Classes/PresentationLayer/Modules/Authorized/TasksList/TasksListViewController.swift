@@ -24,7 +24,9 @@ final class TasksListViewController: BaseCollectionViewController {
 
     override func adapterCreators() -> [AdapterCreator] {
         [
-            TaskCellAdapterCreator()
+            TaskCellAdapterCreator(.init(select: { [weak self] item in
+                self?.handler.openTaskDetail(item)
+            }))
         ]
     }
 }

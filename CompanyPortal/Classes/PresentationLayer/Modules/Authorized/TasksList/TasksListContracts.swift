@@ -9,4 +9,5 @@ protocol TasksListViewBehavior: WaitingBehavior, RefreshBehavior {
 protocol TasksListEventHandler: ViewControllerEventHandler, RefreshEventHandler {
     func bind(view: TasksListViewBehavior, router: TasksListRoutable)
     func moduleDidLoad()
+    func openTaskDetail(_ item: TaskModel)
 }

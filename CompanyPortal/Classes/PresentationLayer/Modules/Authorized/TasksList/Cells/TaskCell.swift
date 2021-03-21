@@ -116,10 +116,8 @@ final class TaskCell: UICollectionViewCell {
             .horizontally(15)
             .sizeToFit(.width)
         
-        var maxY = item.desc == nil ? statusView.frame.maxY: descriptionLabel.frame.maxY 
-        if #available(iOS 14.0, *) {
-            maxY += 16
-        }
+        let maxY = item.desc == nil ? statusView.frame.maxY: descriptionLabel.frame.maxY
+
         return maxY + 10
     }
     
