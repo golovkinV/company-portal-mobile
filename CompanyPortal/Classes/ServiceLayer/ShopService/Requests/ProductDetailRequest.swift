@@ -7,11 +7,7 @@ public struct ProductDetailRequest: MoyaTargetType {
     public var method: Moya.Method = .get
     public var parameters: [String: Any] = [:]
 
-    public var task: Task {
-        return .requestParameters(parameters: self.parameters, encoding: JSONEncoding.default)
-    }
-
-    init(since id: Int) {
-   		parameters["id"] = id
+    init(productId: String) {
+   		path = "/product/\(productId)"
     }
 }

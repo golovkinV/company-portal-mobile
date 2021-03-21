@@ -2,9 +2,9 @@ import IGListKit
 
 // MARK: - View Controller
 
-final class TaskDetailViewController: BaseCollectionViewController {
+final class ProductDetailViewController: BaseCollectionViewController {
 
-    var handler: TaskDetailEventHandler!
+    var handler: ProductDetailEventHandler!
 
     // MARK: - Life cycle
 
@@ -12,20 +12,23 @@ final class TaskDetailViewController: BaseCollectionViewController {
         super.viewDidLoad()
         handler.didLoad()
     }
-
+    
     override func setupViews() {
         sheetViewController?.handleScrollView(collectionView)
     }
     
     override func adapterCreators() -> [AdapterCreator] {
         [
-            TaskTitleCellAdapterCreator(),
-            InfoCellAdapterCreator()
+            ProductImageCellAdapterCreator(),
+            InfoCellAdapterCreator(),
+            ProductShopCellAdapterCreator(.init(select: { [weak self] item in
+                self?.handler.buyProduct(item)
+            }))
         ]
     }
 }
 
-extension TaskDetailViewController: TaskDetailViewBehavior {
+extension ProductDetailViewController: ProductDetailViewBehavior {
     func set(items: [ListDiffable]) {
         self.items = items
         update()

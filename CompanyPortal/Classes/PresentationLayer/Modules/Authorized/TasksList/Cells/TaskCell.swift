@@ -15,7 +15,6 @@ final class TaskCell: UICollectionViewCell {
     }()
     
     private lazy var statusView: UIView = {
-        let theme = MainTheme.shared.self
         let view = UIView().apply {
             $0.layer.cornerRadius = 2
         }

@@ -8,4 +8,5 @@ protocol ShopViewBehavior: WaitingBehavior, RefreshBehavior {
 
 protocol ShopEventHandler: ViewControllerEventHandler, RefreshEventHandler {
     func bind(view: ShopViewBehavior, router: ShopRoutable)
+    func openProductDetail(_ item: ProductModel)
 }

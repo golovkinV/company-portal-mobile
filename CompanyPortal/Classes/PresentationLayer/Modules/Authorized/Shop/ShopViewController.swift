@@ -28,7 +28,9 @@ final class ShopViewController: BaseCollectionViewController {
     
     override func adapterCreators() -> [AdapterCreator] {
         [
-            ProductCellAdapterCreator()
+            ProductCellAdapterCreator(.init(select: { [weak self] item in
+                self?.handler.openProductDetail(item)
+            }))
         ]
     }
 }
