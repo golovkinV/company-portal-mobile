@@ -1,8 +1,14 @@
-import UIKit
-import PinLayout
+//
+//  InfoCell.swift
+//  CompanyPortal
+//
+//  Created by Vladimir Golovkin on 22.03.2021.
+//
 
-final class UserInfoCell: UICollectionViewCell {
-    
+import UIKit
+
+final class InfoCell: UICollectionViewCell {
+
     private lazy var titleLabel: UILabel = {
         let label = UILabel().apply {
             $0.numberOfLines = 0
@@ -31,17 +37,17 @@ final class UserInfoCell: UICollectionViewCell {
     }
 
     // MARK: Configure
-
+    
     @discardableResult
-    func configure(_ item: ProfileInfoItem) -> UserInfoCell {
+    func configure(_ item: InfoModel) -> InfoCell {
         titleLabel.text = item.title
         valueLabel.text = item.value
         return self
     }
-
+    
     @discardableResult
     func layout() -> CGFloat {
-            
+        
         titleLabel.pin
             .top(15)
             .horizontally(15)

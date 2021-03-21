@@ -53,7 +53,9 @@ private class PresentersPart: DIPart {
         UserProfilePart.self,
         TasksListPart.self,
         ShopPart.self,
-        AuthPart.self
+        AuthPart.self,
+        TaskDetailPart.self,
+        ProductDetailPart.self
     ]
 
     static func load(container: DIContainer) {

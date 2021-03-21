@@ -13,6 +13,7 @@ final class ShopServicePart: DIPart {
 
 protocol ShopService {
     func fetchProducts() -> Single<[ProductModel]>
+    func fetchProductDetail(for productId: String) -> Single<ProductModel>
 }
 
 final class ShopServiceImp: ShopService {
@@ -26,6 +27,15 @@ final class ShopServiceImp: ShopService {
     func fetchProducts() -> Single<[ProductModel]> {
         Single.deferred { [unowned self] in
             let request = ProductsRequest()
+            return self.moyaProvider.request(request)
+        }
+        .subscribeOn(schedulers.background)
+        .observeOn(schedulers.main)
+    }
+    
+    func fetchProductDetail(for productId: String) -> Single<ProductModel> {
+        Single.deferred { [unowned self] in
+            let request = ProductDetailRequest(productId: productId)
             return self.moyaProvider.request(request)
         }
         .subscribeOn(schedulers.background)

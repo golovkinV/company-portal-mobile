@@ -41,6 +41,10 @@ extension ShopPresenter: ShopEventHandler {
         fetchProducts()
     }
     
+    func openProductDetail(_ item: ProductModel) {
+        router.openProductDetail(for: item.id)
+    }
+    
     // MARK: - Private
     
     private func fetchProducts() {

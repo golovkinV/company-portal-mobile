@@ -13,6 +13,7 @@ final class TaskServicePart: DIPart {
 
 protocol TaskService {
     func fetchTasks(for userId: String) -> Single<[TaskModel]>
+    func fetchTaskDetail(for taskId: String) -> Single<TaskModel>
 }
 
 final class TaskServiceImp: TaskService {
@@ -26,6 +27,15 @@ final class TaskServiceImp: TaskService {
     func fetchTasks(for userId: String) -> Single<[TaskModel]> {
         Single.deferred { [unowned self] in
             let request = UserTasksRequest(userId: userId)
+            return self.moyaProvider.request(request)
+        }
+        .subscribeOn(schedulers.background)
+        .observeOn(schedulers.main)
+    }
+    
+    func fetchTaskDetail(for taskId: String) -> Single<TaskModel> {
+        Single.deferred { [unowned self] in
+            let request = TastDetailRequest(taskId: taskId)
             return self.moyaProvider.request(request)
         }
         .subscribeOn(schedulers.background)

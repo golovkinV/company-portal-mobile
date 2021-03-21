@@ -2,6 +2,6 @@ import UIKit
 
 // MARK: - Router
 
-protocol ShopRoutable: BaseRoutable {}
+protocol ShopRoutable: BaseRoutable, ProductDetailRoute {}
 
 final class ShopRouter: BaseRouter, ShopRoutable {}
