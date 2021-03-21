@@ -43,16 +43,19 @@ final class MainTabBarViewController: UITabBarController {
         
         let profileViewController = controllers[0]
         let profileNavigationController = BaseNavigationController(rootViewController: profileViewController)
+        profileViewController.navigationController?.setNavigationBarHidden(true, animated: false)
         profileNavigationController.title = text.profile
         profileNavigationController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_profile")
         
         let tasksViewController = controllers[1]
         let tasksNavigationController = BaseNavigationController(rootViewController: tasksViewController)
+        tasksViewController.navigationController?.setNavigationBarHidden(true, animated: false)
         tasksNavigationController.title = text.tasks
         tasksNavigationController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_tasks")
         
         let shopViewController = controllers[2]
         let shopNavigationController = BaseNavigationController(rootViewController: shopViewController)
+        shopViewController.navigationController?.setNavigationBarHidden(true, animated: false)
         shopViewController.title = text.shop
         shopViewController.tabBarItem.image = #imageLiteral(resourceName: "ic_bar_shop")
         

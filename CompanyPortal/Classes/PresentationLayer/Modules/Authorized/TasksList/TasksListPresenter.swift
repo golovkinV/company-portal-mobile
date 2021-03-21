@@ -29,13 +29,19 @@ final class TasksListPresenter {
 }
 
 extension TasksListPresenter: TasksListEventHandler {
-    
+
     func didLoad() {
+        loaderActivity = view.showLoading(fullscreen: true)
         fetchTasks()
     }
     
     func moduleDidLoad() {
         user = userService.fetchUser()
+    }
+    
+    func refresh() {
+        loaderActivity = view.showRefreshIndicator()
+        fetchTasks()
     }
     
 	func bind(view: TasksListViewBehavior, router: TasksListRoutable) {
@@ -46,7 +52,6 @@ extension TasksListPresenter: TasksListEventHandler {
     // MARK: - Private
     
     private func fetchTasks() {
-        loaderActivity = view.showLoading(fullscreen: true)
         taskService.fetchTasks(for: user.id)
             .subscribe(onSuccess: { [weak self] tasks in
                 self?.stopLoading()

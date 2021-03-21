@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Корпоративный магазин" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRL-eR-ZVr">
-                    <rect key="frame" x="15" y="59" width="384" height="81.5"/>
+                    <rect key="frame" x="15" y="68" width="384" height="81.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5o1-Pa-KVD">
-                    <rect key="frame" x="0.0" y="140.5" width="414" height="721.5"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5o1-Pa-KVD">
+                    <rect key="frame" x="0.0" y="149.5" width="414" height="712.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MDe-FB-wDH">
                         <size key="itemSize" width="128" height="128"/>
@@ -46,7 +46,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5o1-Pa-KVD" secondAttribute="bottom" id="aM8-XC-yNz"/>
                 <constraint firstItem="5o1-Pa-KVD" firstAttribute="top" secondItem="xRL-eR-ZVr" secondAttribute="bottom" id="cKP-J9-p6E"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xRL-eR-ZVr" secondAttribute="trailing" constant="15" id="l2I-Un-kLh"/>
-                <constraint firstItem="xRL-eR-ZVr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="xhY-nK-0ZC"/>
+                <constraint firstItem="xRL-eR-ZVr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="xhY-nK-0ZC"/>
             </constraints>
             <point key="canvasLocation" x="43" y="109"/>
         </view>

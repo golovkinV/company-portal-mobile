@@ -2,11 +2,11 @@ import IGListKit
 
 // MARK: - Contracts
 
-protocol TasksListViewBehavior: WaitingBehavior {
+protocol TasksListViewBehavior: WaitingBehavior, RefreshBehavior {
     func set(items: [ListDiffable])
 }
 
-protocol TasksListEventHandler: ViewControllerEventHandler {
+protocol TasksListEventHandler: ViewControllerEventHandler, RefreshEventHandler {
     func bind(view: TasksListViewBehavior, router: TasksListRoutable)
     func moduleDidLoad()
 }

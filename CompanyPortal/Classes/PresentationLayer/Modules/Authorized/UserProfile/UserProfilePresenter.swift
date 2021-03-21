@@ -32,6 +32,7 @@ final class UserProfilePresenter {
 extension UserProfilePresenter: UserProfileEventHandler {
     
     func didLoad() {
+        loaderActivity = view.showLoading(fullscreen: true)
         fetchProfile()
     }
     
@@ -44,10 +45,14 @@ extension UserProfilePresenter: UserProfileEventHandler {
         user = userService.fetchUser()
     }
     
+    func refresh() {
+        loaderActivity = view.showRefreshIndicator()
+        fetchProfile()
+    }
+    
     // MARK: - Private
         
     private func fetchProfile() {
-        loaderActivity = view.showLoading(fullscreen: true)
         profileService
             .fetchProfile(for: user.id)
             .subscribe(onSuccess: { [weak self] profile in

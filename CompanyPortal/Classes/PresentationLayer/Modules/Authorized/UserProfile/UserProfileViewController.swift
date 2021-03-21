@@ -16,6 +16,12 @@ final class UserProfileViewController: BaseCollectionViewController {
     override func setupViews() {
         view.backgroundColor = MainTheme.shared.baseColor
         view.alpha = 0
+        collectionView.contentInset.top = 15
+        addRefreshControl()
+    }
+    
+    override func refresh() {
+        handler.refresh()
     }
     
     override func adapterCreators() -> [AdapterCreator] {
@@ -26,7 +32,7 @@ final class UserProfileViewController: BaseCollectionViewController {
     }
 }
 
-extension UserProfileViewController: UserProfileViewBehavior {
+extension UserProfileViewController: UserProfileViewBehavior { 
     func set(items: [ListDiffable]) {
         if !items.isEmpty {
             view.alpha = 1
