@@ -14,7 +14,6 @@ final class TasksListViewController: BaseCollectionViewController {
     }
     
     override func setupViews() {
-        view.alpha = 0
         collectionView.contentInset.top = 15
         addRefreshControl()
     }
@@ -33,9 +32,6 @@ final class TasksListViewController: BaseCollectionViewController {
 extension TasksListViewController: TasksListViewBehavior {
 
     func set(items: [ListDiffable]) {
-        if !items.isEmpty {
-            view.alpha = 1
-        }
         self.items = items
         update()
     }

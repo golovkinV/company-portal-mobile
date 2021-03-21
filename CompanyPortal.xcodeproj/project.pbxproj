@@ -135,6 +135,8 @@
 		E756228726076BCB008CCC97 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756228626076BCB008CCC97 /* ProfileService.swift */; };
 		E756228B26076C81008CCC97 /* ProfileRequestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756228A26076C81008CCC97 /* ProfileRequestRequest.swift */; };
 		E76BA70026079283001E6D6E /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6FF26079283001E6D6E /* TaskStatus.swift */; };
+		E76BA7042607A43D001E6D6E /* ShopService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BA7032607A43D001E6D6E /* ShopService.swift */; };
+		E76BA7082607A47C001E6D6E /* ProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BA7072607A47C001E6D6E /* ProductsRequest.swift */; };
 		E848391A480119919A1DE610 /* ProductCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B8BD4E73029A80E7920965 /* ProductCellAdapter.swift */; };
 		E91B85C22E0EA4B7D4433478 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0A316498E0624BCD62B89E /* ShopViewController.xib */; };
 		ECA940B70642706D4AEDD574 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F6F33E9DF8DA130476B76F /* TaskCell.xib */; };
@@ -294,6 +296,8 @@
 		E756228626076BCB008CCC97 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		E756228A26076C81008CCC97 /* ProfileRequestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequestRequest.swift; sourceTree = "<group>"; };
 		E76BA6FF26079283001E6D6E /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
+		E76BA7032607A43D001E6D6E /* ShopService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopService.swift; sourceTree = "<group>"; };
+		E76BA7072607A47C001E6D6E /* ProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequest.swift; sourceTree = "<group>"; };
 		E9629CE2C4E8BA419B0820DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAABAA06F57B7C8E1368014A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC67E6C8B89B25C7BBA0D9C7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -502,6 +506,7 @@
 		3B089A0F9134B1E588F2273C /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E76BA7022607A42D001E6D6E /* ShopService */,
 				E727FCB42607811B00653020 /* TaskService */,
 				E756228526076BAE008CCC97 /* ProfileService */,
 				E756226826075D7E008CCC97 /* UserService */,
@@ -935,6 +940,23 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		E76BA7022607A42D001E6D6E /* ShopService */ = {
+			isa = PBXGroup;
+			children = (
+				E76BA7062607A467001E6D6E /* Requests */,
+				E76BA7032607A43D001E6D6E /* ShopService.swift */,
+			);
+			path = ShopService;
+			sourceTree = "<group>";
+		};
+		E76BA7062607A467001E6D6E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E76BA7072607A47C001E6D6E /* ProductsRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		E770BDA64BFCECD723880754 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -1262,6 +1284,7 @@
 				D7CA0569923CF858E7D13D6B /* ListSectionControllerExtension.swift in Sources */,
 				F397C74395EB6CA8B895803F /* LoadableView.swift in Sources */,
 				EF490B1E2BCDFF14595B35CE /* Localizable.swift in Sources */,
+				E76BA7082607A47C001E6D6E /* ProductsRequest.swift in Sources */,
 				8CF6737E9080F2D4D882942C /* Logger.swift in Sources */,
 				E756228326076A77008CCC97 /* ShopStatus.swift in Sources */,
 				1971AF685312245E0833D969 /* LogoutCell.swift in Sources */,
@@ -1300,6 +1323,7 @@
 				4F8ECA693BD9ED07EC94CDA8 /* ShadowView.swift in Sources */,
 				057A055DED77D957F40E6434 /* ShareRoute.swift in Sources */,
 				C9033B01FA126A80BB886414 /* ShedulerProvider.swift in Sources */,
+				E76BA7042607A43D001E6D6E /* ShopService.swift in Sources */,
 				B5D524E74B1365ACFF34F2D0 /* ShopAssembly.swift in Sources */,
 				A3D1F3AAA01A93A14FCE9056 /* ShopContracts.swift in Sources */,
 				E756227D26076975008CCC97 /* Job.swift in Sources */,

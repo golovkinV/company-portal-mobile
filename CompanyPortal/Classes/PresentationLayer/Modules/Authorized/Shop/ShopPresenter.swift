@@ -1,5 +1,6 @@
 import UIKit
 import DITranquillity
+import RxSwift
 
 final class ShopPart: DIPart {
     static func load(container: DIContainer) {
@@ -12,14 +13,22 @@ final class ShopPart: DIPart {
 // MARK: - Presenter
 
 final class ShopPresenter {
+    private let bag = DisposeBag()
     private weak var view: ShopViewBehavior!
     private var router: ShopRoutable!
+    private let shopService: ShopService
+    private var loaderActivity: ActivityDisposable?
+    
+    init(shopService: ShopService) {
+        self.shopService = shopService
+    }
 }
 
 extension ShopPresenter: ShopEventHandler {
-    
+
     func didLoad() {
-        setDefaultItems()
+        loaderActivity = view.showLoading(fullscreen: true)
+        fetchProducts()
     }
     
 	func bind(view: ShopViewBehavior, router: ShopRoutable) {
@@ -27,16 +36,26 @@ extension ShopPresenter: ShopEventHandler {
         self.router = router
     }
     
+    func refresh() {
+        loaderActivity = view.showRefreshIndicator()
+        fetchProducts()
+    }
+    
     // MARK: - Private
     
-    private func setDefaultItems() {
-        let products: [ProductModel] = [
-            .init(productImage: nil, statusLabel: "new", name: "Плюшевый пони", price: "25"),
-            .init(productImage: nil, statusLabel: "new", name: "Мерч", price: "25 500"),
-            .init(productImage: nil, statusLabel: "new", name: "Ручка", price: "155"),
-            .init(productImage: nil, statusLabel: "new", name: "Разработчик +", price: "85 000")
-        ]
-        
-        view.set(items: products)
+    private func fetchProducts() {
+        shopService.fetchProducts()
+            .subscribe(onSuccess: { [weak self] products in
+                self?.stopLoading()
+                self?.view.set(items: products)
+            }, onError: { [weak self] error in
+                self?.stopLoading()
+                self?.router.show(error: error)
+            })
+            .disposed(by: bag)
+    }
+    
+    private func stopLoading() {
+        loaderActivity?.dispose()
     }
 }

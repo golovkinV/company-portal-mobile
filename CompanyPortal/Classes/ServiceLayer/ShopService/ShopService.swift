@@ -2,20 +2,20 @@ import DITranquillity
 import RxCocoa
 import RxSwift
 
-final class TaskServicePart: DIPart {
+final class ShopServicePart: DIPart {
     static func load(container: DIContainer) {
-        container.register(TaskServiceImp.init)
-            .as(TaskService.self)
+        container.register(ShopServiceImp.init)
+            .as(ShopService.self)
             .injection(cycle: true, { $0.moyaProvider = $1 })
             .lifetime(.single)
     }
 }
 
-protocol TaskService {
-    func fetchTasks(for userId: String) -> Single<[TaskModel]>
+protocol ShopService {
+    func fetchProducts() -> Single<[ProductModel]>
 }
 
-final class TaskServiceImp: TaskService {
+final class ShopServiceImp: ShopService {
     private let schedulers: SchedulerProvider
 	var moyaProvider: MultiMoyaProvider!
 
@@ -23,9 +23,9 @@ final class TaskServiceImp: TaskService {
         self.schedulers = schedulers
     }
     
-    func fetchTasks(for userId: String) -> Single<[TaskModel]> {
+    func fetchProducts() -> Single<[ProductModel]> {
         Single.deferred { [unowned self] in
-            let request = UserTasksRequest(userId: userId)
+            let request = ProductsRequest()
             return self.moyaProvider.request(request)
         }
         .subscribeOn(schedulers.background)

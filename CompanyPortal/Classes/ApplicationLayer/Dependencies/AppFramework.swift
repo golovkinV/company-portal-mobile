@@ -36,7 +36,8 @@ private class ServicesPart: DIPart {
         AuthServicePart.self,
         UserServicePart.self,
         ProfileSerivePart.self,
-        TaskSerivePart.self
+        TaskServicePart.self,
+        ShopServicePart.self
     ]
 
     static func load(container: DIContainer) {
