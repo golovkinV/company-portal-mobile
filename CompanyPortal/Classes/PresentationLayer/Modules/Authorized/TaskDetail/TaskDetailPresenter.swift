@@ -52,11 +52,11 @@ extension TaskDetailPresenter: TaskDetailEventHandler {
                 let start = task.startDate?.toFormat("dd.MM.yyyy")
                 let end = task.endDate?.toFormat("dd.MM.yyyy")
                 let executors = task.executors.map { $0.fullName }.joined(separator: "\n")
-                let info = [TaskInfo(title: "Описание", value: task.desc),
-                            TaskInfo(title: "Награда", value: "\(task.money)"),
-                            TaskInfo(title: "Начать", value: start),
-                            TaskInfo(title: "Закончить", value: end),
-                            TaskInfo(title: "Исполнители", value: executors)]
+                let info = [InfoModel(title: "Описание", value: task.desc),
+                            InfoModel(title: "Награда", value: "\(task.money)"),
+                            InfoModel(title: "Начать", value: start),
+                            InfoModel(title: "Закончить", value: end),
+                            InfoModel(title: "Исполнители", value: executors)]
                 let items: [ListDiffable] = [title] + info.filter { $0.value != nil }
                 self?.view.set(items: items)
             }, onError: { [weak self] error in

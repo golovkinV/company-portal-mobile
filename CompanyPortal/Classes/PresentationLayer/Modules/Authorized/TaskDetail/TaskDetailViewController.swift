@@ -15,7 +15,7 @@ final class TaskDetailViewController: BaseCollectionViewController {
 
     override func adapterCreators() -> [AdapterCreator] {
         [
-            TitleCellAdapterCreator(),
+            TaskTitleCellAdapterCreator(),
             InfoCellAdapterCreator()
         ]
     }

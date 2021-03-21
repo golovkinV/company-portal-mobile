@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class TaskInfo: NSObject { 
+class InfoModel: NSObject {
     let title: String
     let value: String?
     

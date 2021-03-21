@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TitleCell: UICollectionViewCell {
+final class TaskTitleCell: UICollectionViewCell {
 
     private lazy var nameLabel: UILabel = {
         let label = UILabel().apply {
@@ -49,7 +49,7 @@ final class TitleCell: UICollectionViewCell {
     // MARK: Configure
     
     @discardableResult
-    func configure(_ item: TaskTitle) -> TitleCell {
+    func configure(_ item: TaskTitle) -> TaskTitleCell {
         nameLabel.text = item.title
         statusView.backgroundColor = item.status.fetchColor()
         statusLabel.text = item.status.fetchNaming()

@@ -39,7 +39,7 @@ final class InfoCell: UICollectionViewCell {
     // MARK: Configure
     
     @discardableResult
-    func configure(_ item: TaskInfo) -> InfoCell {
+    func configure(_ item: InfoModel) -> InfoCell {
         titleLabel.text = item.title
         valueLabel.text = item.value
         return self

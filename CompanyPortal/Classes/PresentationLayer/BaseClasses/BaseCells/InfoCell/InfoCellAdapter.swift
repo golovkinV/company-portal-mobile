@@ -1,11 +1,11 @@
 import IGListKit
 import UIKit
 
-final class InfoCellAdapterCreator: BaseAdapterCreator<TaskInfo, InfoCellAdapter> {}
+final class InfoCellAdapterCreator: BaseAdapterCreator<InfoModel, InfoCellAdapter> {}
 
 public final class InfoCellAdapter: ListSectionController {
     
-    private var item: TaskInfo!
+    private var item: InfoModel!
     private var size: CGSize = .zero
 
     private static let template = InfoCell.loadFromNib(frame: UIScreen.main.bounds)!
@@ -19,7 +19,7 @@ public final class InfoCellAdapter: ListSectionController {
     }
 
     public override func didUpdate(to object: Any) {
-        self.item = object as? TaskInfo
+        self.item = object as? InfoModel
         let width: CGFloat = collectionContext!.containerSize.width
         let height: CGFloat = self|.template
             .configure(item)
