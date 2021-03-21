@@ -6,6 +6,8 @@
 	<string>$(CONFIGURATION)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>ru</string>
+	<key>CFBundleDisplayName</key>
+	<string>Company Portal</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

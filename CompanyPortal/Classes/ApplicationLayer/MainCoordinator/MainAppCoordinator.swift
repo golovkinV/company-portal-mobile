@@ -1,7 +1,5 @@
 import DITranquillity
-import Foundation
 import RxSwift
-import UIKit
 
 open class MainAppCoordinator: Loggable {
     public var defaultLoggingTag: LogTag {
@@ -12,15 +10,17 @@ open class MainAppCoordinator: Loggable {
 
     open var configuration: DependenciesConfiguration
     open var container: DIContainer
-
+    
+    private let bag: DisposeBag = DisposeBag()
     private let router: AppRouter
-
+    private let authService: AuthService
+    
     init(configuration: DependenciesConfiguration) {
         self.configuration = configuration
         self.configuration.setup()
         self.container = self.configuration.configuredContainer()
         self.router = AppRouter()
-
+        authService = *container
         self.log(.debug, "Dependencies are configured")
     }
 
@@ -33,6 +33,15 @@ open class MainAppCoordinator: Loggable {
     // MARK: - Modules routing
 
     private func openMainModule() {
-        self.router.openDefaultScene()
+        authService.fetchSessionStatusSequence()
+            .subscribe(onNext: { [unowned self] status in
+                switch status {
+                case .unauthorized:
+                    self.router.openAuthScene()
+                case .authorized:
+                    self.router.openDefaultScene()
+                }
+            })
+            .disposed(by: bag)
     }
 }
