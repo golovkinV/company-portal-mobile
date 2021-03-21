@@ -75,6 +75,25 @@ internal enum L10n {
     }
   }
 
+  internal enum Auth {
+    /// Логин
+    internal static var login: String {
+        return L10n.tr("Localizable", "auth.login")
+    }
+    /// Пароль
+    internal static var password: String {
+        return L10n.tr("Localizable", "auth.password")
+    }
+    /// Вход
+    internal static var signIn: String {
+        return L10n.tr("Localizable", "auth.signIn")
+    }
+    /// Авторизация
+    internal static var title: String {
+        return L10n.tr("Localizable", "auth.title")
+    }
+  }
+
   internal enum TabBar {
     /// Профиль
     internal static var profile: String {

@@ -11,7 +11,12 @@ final class MoyaPluginFactoryPart: DIPart {
 }
 
 protocol MoyaPluginFactory {
+    func plugins(verbose: Bool, cURL: Bool) -> [PluginType]
 }
 
 final class MoyaPluginFactoryImpl: MoyaPluginFactory {
+        
+    func plugins(verbose: Bool, cURL: Bool) -> [PluginType] {
+        return [NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions: .formatRequestAscURL))]
+    }
 }

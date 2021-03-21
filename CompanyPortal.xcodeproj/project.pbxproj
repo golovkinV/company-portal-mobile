@@ -111,6 +111,21 @@
 		E648AD8713999B7C9E87A013 /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9DFB0198E56AC8BAD4359 /* MainTabBarPresenter.swift */; };
 		E67350B296F1B78D9A07F6E0 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB433163C9CCA577E51B2CC /* TaskCell.swift */; };
 		E680CE7970C2026280916B16 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703992315479A53B28A0D90 /* ApiError.swift */; };
+		E756222226074F8C008CCC97 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756222126074F8C008CCC97 /* AuthService.swift */; };
+		E7562249260751B1008CCC97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7562248260751B1008CCC97 /* User.swift */; };
+		E756224E2607538C008CCC97 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756224D2607538C008CCC97 /* SignInRequest.swift */; };
+		E756225B26075567008CCC97 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756225526075567008CCC97 /* AuthViewController.swift */; };
+		E756225C26075567008CCC97 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E756225626075567008CCC97 /* AuthViewController.xib */; };
+		E756225D26075567008CCC97 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756225726075567008CCC97 /* AuthAssembly.swift */; };
+		E756225E26075567008CCC97 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756225826075567008CCC97 /* AuthPresenter.swift */; };
+		E756225F26075567008CCC97 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756225926075567008CCC97 /* AuthRouter.swift */; };
+		E756226026075567008CCC97 /* AuthContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756225A26075567008CCC97 /* AuthContracts.swift */; };
+		E756226326075692008CCC97 /* StateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756226226075692008CCC97 /* StateButton.swift */; };
+		E7562266260756B5008CCC97 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7562265260756B5008CCC97 /* BorderTextField.swift */; };
+		E756226A26075E15008CCC97 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756226926075E15008CCC97 /* UserRepository.swift */; };
+		E756226D26076026008CCC97 /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756226C26076026008CCC97 /* RealmExtension.swift */; };
+		E7562271260760A4008CCC97 /* BaseRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7562270260760A4008CCC97 /* BaseRealmModel.swift */; };
+		E7562275260761C0008CCC97 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7562274260761C0008CCC97 /* UserService.swift */; };
 		E848391A480119919A1DE610 /* ProductCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B8BD4E73029A80E7920965 /* ProductCellAdapter.swift */; };
 		E91B85C22E0EA4B7D4433478 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0A316498E0624BCD62B89E /* ShopViewController.xib */; };
 		ECA940B70642706D4AEDD574 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F6F33E9DF8DA130476B76F /* TaskCell.xib */; };
@@ -246,6 +261,21 @@
 		E4DA7CDEBF739628097DBBAA /* UserInfoCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCellAdapter.swift; sourceTree = "<group>"; };
 		E4EFB26911415F8B191925E9 /* UserInfoContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoContainerCell.swift; sourceTree = "<group>"; };
 		E6964072D351E194B8A75499 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		E756222126074F8C008CCC97 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E7562248260751B1008CCC97 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E756224D2607538C008CCC97 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		E756225526075567008CCC97 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		E756225626075567008CCC97 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		E756225726075567008CCC97 /* AuthAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
+		E756225826075567008CCC97 /* AuthPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		E756225926075567008CCC97 /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		E756225A26075567008CCC97 /* AuthContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthContracts.swift; sourceTree = "<group>"; };
+		E756226226075692008CCC97 /* StateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateButton.swift; sourceTree = "<group>"; };
+		E7562265260756B5008CCC97 /* BorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		E756226926075E15008CCC97 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		E756226C26076026008CCC97 /* RealmExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtension.swift; sourceTree = "<group>"; };
+		E7562270260760A4008CCC97 /* BaseRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRealmModel.swift; sourceTree = "<group>"; };
+		E7562274260761C0008CCC97 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E9629CE2C4E8BA419B0820DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAABAA06F57B7C8E1368014A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC67E6C8B89B25C7BBA0D9C7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -277,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				2D0BB457AC217BB3BD39AE7D /* AttributeStringBuilder.swift */,
+				E7562270260760A4008CCC97 /* BaseRealmModel.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -313,6 +344,7 @@
 		12600051067976AD2759A8F2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E756225326075549008CCC97 /* Unautorized */,
 				DACF02B9B2115F35BF84330F /* Authorized */,
 			);
 			path = Modules;
@@ -352,6 +384,7 @@
 		1D6D4B7B63A595E7AFEF11F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7562247260751A6008CCC97 /* User */,
 				D46045DBD77291600A20CD3C /* Owner.swift */,
 				DCE7E7D1C7F9114305BD9C73 /* Repo.swift */,
 				DFF22BC58B940BD78D6045D0 /* Product */,
@@ -413,6 +446,8 @@
 		35D511AE9A20640BFA198E81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E7562265260756B5008CCC97 /* BorderTextField.swift */,
+				E756226226075692008CCC97 /* StateButton.swift */,
 				F4EE05D7695DEE3F71D0E760 /* BorderedView.swift */,
 				89A42CB636F12D221FFDC629 /* LoadableView.swift */,
 				7D001B3A9620A89B7C74296D /* MRLoaderManager.swift */,
@@ -448,6 +483,8 @@
 		3B089A0F9134B1E588F2273C /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E756226826075D7E008CCC97 /* UserService */,
+				E756221E26074F74008CCC97 /* AuthService */,
 				DAD3881A4A334AA05B65C55E /* RepoService */,
 			);
 			path = ServiceLayer;
@@ -524,6 +561,7 @@
 			children = (
 				37D1E735ACB74727C3FB49DF /* ClearableManager.swift */,
 				3B0A2D051DF37D62AF3AF08B /* MoyaRepository */,
+				E756226926075E15008CCC97 /* UserRepository.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -785,6 +823,60 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		E756221E26074F74008CCC97 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				E756224C26075365008CCC97 /* Requests */,
+				E756222126074F8C008CCC97 /* AuthService.swift */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		E7562247260751A6008CCC97 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E7562248260751B1008CCC97 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		E756224C26075365008CCC97 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E756224D2607538C008CCC97 /* SignInRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E756225326075549008CCC97 /* Unautorized */ = {
+			isa = PBXGroup;
+			children = (
+				E756225426075567008CCC97 /* Auth */,
+			);
+			path = Unautorized;
+			sourceTree = "<group>";
+		};
+		E756225426075567008CCC97 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E756225526075567008CCC97 /* AuthViewController.swift */,
+				E756225626075567008CCC97 /* AuthViewController.xib */,
+				E756225726075567008CCC97 /* AuthAssembly.swift */,
+				E756225826075567008CCC97 /* AuthPresenter.swift */,
+				E756225926075567008CCC97 /* AuthRouter.swift */,
+				E756225A26075567008CCC97 /* AuthContracts.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E756226826075D7E008CCC97 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				E7562274260761C0008CCC97 /* UserService.swift */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
 		E770BDA64BFCECD723880754 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -879,6 +971,7 @@
 				C076E14F1A749E1F7A73A606 /* StringExtension.swift */,
 				953DE07D68A060423E96524F /* UICollectionViewCellExtension.swift */,
 				95822360857670D5C99BF9E6 /* UIImageViewExtension.swift */,
+				E756226C26076026008CCC97 /* RealmExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -983,6 +1076,7 @@
 				697AEF04C5455CE92F78D379 /* LogoutCell.xib in Resources */,
 				1AA72C68D8A3E81287C774B2 /* MRLoaderView.xib in Resources */,
 				3E111FBE36D6D6272B977AEB /* ProductCell.xib in Resources */,
+				E756225C26075567008CCC97 /* AuthViewController.xib in Resources */,
 				E91B85C22E0EA4B7D4433478 /* ShopViewController.xib in Resources */,
 				ECA940B70642706D4AEDD574 /* TaskCell.xib in Resources */,
 				0BD3D668C233380BB7ED9DC1 /* TasksListViewController.xib in Resources */,
@@ -1061,6 +1155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98760464309B14981C3C35AD /* AdapterManager.swift in Sources */,
+				E756226026075567008CCC97 /* AuthContracts.swift in Sources */,
 				7B5635B106778B48130A502A /* AnimationProcess.swift in Sources */,
 				E680CE7970C2026280916B16 /* ApiError.swift in Sources */,
 				3C59414F08C46DF67FEC3775 /* AppDelegate.swift in Sources */,
@@ -1072,10 +1167,12 @@
 				9DC00797C2605083CEE7D1D8 /* AttributeStringBuilder.swift in Sources */,
 				E56E756F2D07674518561DDD /* AvatarCell.swift in Sources */,
 				874C6AA445E67093FE21535F /* AvatarCellAdapter.swift in Sources */,
+				E756226A26075E15008CCC97 /* UserRepository.swift in Sources */,
 				672B9453F5ECD9EBA3BD2CA4 /* BaseCollectionViewCell.swift in Sources */,
 				95FC620FD463607507B9DB84 /* BaseCollectionViewController.swift in Sources */,
 				3F396865FED28EC920E26238 /* BaseNavigationController.swift in Sources */,
 				FCC0EB17A1B4B78AC2FEE70B /* BaseViewController.swift in Sources */,
+				E7562266260756B5008CCC97 /* BorderTextField.swift in Sources */,
 				8D1174A946F4EE8BF2724EED /* BorderedView.swift in Sources */,
 				457746EECFFC880163333F32 /* CALayer+Animation.swift in Sources */,
 				6F2B0A52F991DF2AA1A700F9 /* CAPropertyAnimation+Key.swift in Sources */,
@@ -1085,10 +1182,15 @@
 				A21E441D3A40F035F6C556CB /* Configuration.swift in Sources */,
 				3AC2303B7D4F1C46E9908FE8 /* Constants.swift in Sources */,
 				2E553B486E89ACE192B9EE05 /* Containers.swift in Sources */,
+				E756225D26075567008CCC97 /* AuthAssembly.swift in Sources */,
 				FCFB665A860C37CC9D2F21CB /* Converter.swift in Sources */,
 				82BD2678AF4C4BBA02E76300 /* DependenciesConfiguration.swift in Sources */,
+				E756222226074F8C008CCC97 /* AuthService.swift in Sources */,
+				E756226326075692008CCC97 /* StateButton.swift in Sources */,
 				7D123ABCC9A3680503397BA9 /* Double+Math.swift in Sources */,
 				957CE86F1FB675CBA6F69043 /* ErrorCodes.swift in Sources */,
+				E756225F26075567008CCC97 /* AuthRouter.swift in Sources */,
+				E7562249260751B1008CCC97 /* User.swift in Sources */,
 				06D69138FACE26C58E1C3950 /* ErrorHandling.swift in Sources */,
 				49775D9C4F85009193B2B346 /* ErrorHandlingRoute.swift in Sources */,
 				C3FEC4C54CFE06B1905D2338 /* IdPaging.swift in Sources */,
@@ -1117,8 +1219,10 @@
 				EDF48754DE7F0715D0864B92 /* NSObjectExtension.swift in Sources */,
 				B63050F8E1DD557FA500E78F /* Operators.swift in Sources */,
 				DB00749DB86BB17BD82E162C /* Owner.swift in Sources */,
+				E756225E26075567008CCC97 /* AuthPresenter.swift in Sources */,
 				8750184BC64E5D7E97D14489 /* Paginator.swift in Sources */,
 				ECC594E5CEC96DC2684A871C /* ProductCell.swift in Sources */,
+				E756224E2607538C008CCC97 /* SignInRequest.swift in Sources */,
 				E848391A480119919A1DE610 /* ProductCellAdapter.swift in Sources */,
 				1C37749CDD1105D7AB774861 /* ProductModel.swift in Sources */,
 				64BA7AD4F4E603AD0B08E414 /* RefreshIndicator.swift in Sources */,
@@ -1138,13 +1242,16 @@
 				4E073A2AFF26D9B70DBE6BBE /* SimpleLogger.swift in Sources */,
 				458B0C4B54237F49E0A9045F /* SpringIndicator.swift in Sources */,
 				4226FD7835FB39C28A7E854B /* StringExtension.swift in Sources */,
+				E7562271260760A4008CCC97 /* BaseRealmModel.swift in Sources */,
 				E67350B296F1B78D9A07F6E0 /* TaskCell.swift in Sources */,
 				DA9BB18D26AE86AC870139B4 /* TaskCellAdapter.swift in Sources */,
 				5925E85ED6CEE0BCB36A87DF /* TaskModel.swift in Sources */,
 				AB3B16FB0702BAC16736079C /* TasksListAssembly.swift in Sources */,
 				D5A5C5AC2464B8C9BEB75339 /* TasksListContracts.swift in Sources */,
+				E7562275260761C0008CCC97 /* UserService.swift in Sources */,
 				7DBFEE1506DF5C883FF9F320 /* TasksListPresenter.swift in Sources */,
 				89439EEA88BE6DCA90B4A895 /* TasksListRouter.swift in Sources */,
+				E756225B26075567008CCC97 /* AuthViewController.swift in Sources */,
 				F97E40CC2A030FE9BDA5660A /* TasksListViewController.swift in Sources */,
 				FB75812988E58151BF54FEC4 /* UICollectionViewCellExtension.swift in Sources */,
 				65227892673FB9959713A376 /* UIImageViewExtension.swift in Sources */,
@@ -1152,6 +1259,7 @@
 				9B40705D6D023885D0207F45 /* UserInfoCell.swift in Sources */,
 				FD2699E0A3615A8F69227829 /* UserInfoCellAdapter.swift in Sources */,
 				94B126D2F4A132E64EE51474 /* UserInfoCellDelegate.swift in Sources */,
+				E756226D26076026008CCC97 /* RealmExtension.swift in Sources */,
 				FC37677DC049EE46E78F1705 /* UserInfoContainerCell.swift in Sources */,
 				C297D424B61B42D4FA26FBD0 /* UserInfoContainerCellAdapter.swift in Sources */,
 				3311E2C1123182F64A7CE6D3 /* UserInfoContainerCellDelegate.swift in Sources */,
@@ -1215,7 +1323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.study.CompanyPortal;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1296,7 +1404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.study.CompanyPortal;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -14,7 +14,13 @@ public class AppRouter {
     public func openDefaultScene() {
         let module = MainTabBarAssembly.createModule()
         let nc = BaseNavigationController(rootViewController: module)
-        
+        ShowWindowRouter(target: nc,
+                         window: self.createWindow()).move()
+    }
+    
+    public func openAuthScene() {
+        let module = AuthAssembly.createModule()
+        let nc = BaseNavigationController(rootViewController: module)
         ShowWindowRouter(target: nc,
                          window: self.createWindow()).move()
     }
