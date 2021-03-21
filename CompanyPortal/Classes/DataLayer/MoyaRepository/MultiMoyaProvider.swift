@@ -13,7 +13,8 @@ extension DIContainer {
     func registerMoyaProvider(verbose: Bool, cURL: Bool) {
         register { (factory: MoyaPluginFactory,
             schedulers: SchedulerProvider) in
-            MultiMoyaProvider.init(schedulers: schedulers)
+            MultiMoyaProvider.init(plugins: factory.plugins(verbose: verbose, cURL: cURL),
+                                   schedulers: schedulers)
         }
         .as(RequestProvider<MultiTarget>.self)
         .lifetime(.objectGraph)

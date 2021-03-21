@@ -19,3 +19,10 @@
 "tabBar.profile" = "Профиль";
 "tabBar.shop" = "Магазин";
 "tabBar.tasks" = "Задачи";
+
+// MARK: - Auth
+
+"auth.title" = "Авторизация";
+"auth.signIn" = "Вход";
+"auth.login" = "Логин";
+"auth.password" = "Пароль";
