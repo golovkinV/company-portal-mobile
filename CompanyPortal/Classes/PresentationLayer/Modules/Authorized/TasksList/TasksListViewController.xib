@@ -20,8 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HxS-rs-cwG">
-                    <rect key="frame" x="0.0" y="115" width="414" height="747"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HxS-rs-cwG">
+                    <rect key="frame" x="0.0" y="109" width="414" height="753"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nYf-Wa-zvo">
                         <size key="itemSize" width="128" height="128"/>
@@ -31,7 +31,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текущие задачи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5o-0r-14F">
-                    <rect key="frame" x="15" y="59" width="384" height="41"/>
+                    <rect key="frame" x="15" y="68" width="384" height="41"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -40,13 +40,13 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="o5o-0r-14F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="ABq-5N-tTW"/>
+                <constraint firstItem="o5o-0r-14F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="ABq-5N-tTW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HxS-rs-cwG" secondAttribute="trailing" id="CmA-Ju-hYc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HxS-rs-cwG" secondAttribute="bottom" id="GUH-ps-mtw"/>
                 <constraint firstItem="HxS-rs-cwG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RDU-gx-I8i"/>
                 <constraint firstItem="o5o-0r-14F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="SFi-2q-g0m"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o5o-0r-14F" secondAttribute="trailing" constant="15" id="T69-uA-7YZ"/>
-                <constraint firstItem="HxS-rs-cwG" firstAttribute="top" secondItem="o5o-0r-14F" secondAttribute="bottom" constant="15" id="Vtd-SS-eW4"/>
+                <constraint firstItem="HxS-rs-cwG" firstAttribute="top" secondItem="o5o-0r-14F" secondAttribute="bottom" id="Vtd-SS-eW4"/>
             </constraints>
             <point key="canvasLocation" x="-230.43478260869566" y="108.48214285714285"/>
         </view>

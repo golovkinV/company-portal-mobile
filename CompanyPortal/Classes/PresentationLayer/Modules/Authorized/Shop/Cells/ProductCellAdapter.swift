@@ -29,7 +29,7 @@ public final class ProductCellAdapter: ListSectionController, Interactable {
     public override func didUpdate(to object: Any) {
         self.item = object as? ProductModel
         let width: CGFloat = collectionContext!.containerSize.width/2 - (15 + 7.5)
-        let height: CGFloat = 335
+        let height: CGFloat = 316
         size = CGSize(width: width, height: height)
         inset = .init(top: 15, left: 7.5, bottom: 0, right: 7.5)
     }

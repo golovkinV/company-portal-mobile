@@ -12,7 +12,9 @@ public class AppFramework: DIFramework {
 }
 
 private class RepositoriesPart: DIPart {
-    static let parts: [DIPart.Type] = []
+    static let parts: [DIPart.Type] = [
+        UserRepositoryPart.self
+    ]
 
     static func load(container: DIContainer) {
         for part in self.parts {
@@ -30,7 +32,12 @@ private class RepositoriesPart: DIPart {
 private class ServicesPart: DIPart {
     static let parts: [DIPart.Type] = [
         MoyaPluginFactoryPart.self,
-        RepoServicePart.self
+        RepoServicePart.self,
+        AuthServicePart.self,
+        UserServicePart.self,
+        ProfileSerivePart.self,
+        TaskServicePart.self,
+        ShopServicePart.self
     ]
 
     static func load(container: DIContainer) {
@@ -42,11 +49,11 @@ private class ServicesPart: DIPart {
 
 private class PresentersPart: DIPart {
     static let parts: [DIPart.Type] = [
-        MoyaPluginFactoryPart.self,
         MainTabBarPart.self,
         UserProfilePart.self,
         TasksListPart.self,
-        ShopPart.self
+        ShopPart.self,
+        AuthPart.self
     ]
 
     static func load(container: DIContainer) {

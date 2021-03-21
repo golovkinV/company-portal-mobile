@@ -1,5 +1,6 @@
 import UIKit
 import DITranquillity
+import RxSwift
 
 final class UserProfilePart: DIPart {
     static func load(container: DIContainer) {
@@ -12,14 +13,27 @@ final class UserProfilePart: DIPart {
 // MARK: - Presenter
 
 final class UserProfilePresenter {
+    private let bag = DisposeBag()
     private weak var view: UserProfileViewBehavior!
     private var router: UserProfileRoutable!
+    private let profileService: ProfileService
+    private let userService: UserService
+    
+    private var loaderActivity: ActivityDisposable?
+    private var user: User!
+    
+    init(profileService: ProfileService,
+         userService: UserService) {
+        self.profileService = profileService
+        self.userService = userService
+    }
 }
 
 extension UserProfilePresenter: UserProfileEventHandler {
     
     func didLoad() {
-        setDefaultItems()
+        loaderActivity = view.showLoading(fullscreen: true)
+        fetchProfile()
     }
     
 	func bind(view: UserProfileViewBehavior, router: UserProfileRoutable) {
@@ -27,18 +41,56 @@ extension UserProfilePresenter: UserProfileEventHandler {
         self.router = router
     }
     
-    // MARK: - Private
+    func moduleDidLoad() {
+        user = userService.fetchUser()
+    }
     
-    private func setDefaultItems() {
-        let avatar = #imageLiteral(resourceName: "sasuke")
-        let profileAvatar = ProfileAvatar(fullName: "Sasuke Uchiha", avatarImage: avatar)
-        let profileItems: [ProfileInfoItem] = [
-            .init(title: "Должность", value: "Инженер-программист"),
-            .init(title: "Статус", value: "Middle - действует скидка 10% в корпоративном магазине"),
-            .init(title: "Всего наград", value: "10"),
-            .init(title: "Всего яблок", value: "10")
-        ]
+    func refresh() {
+        loaderActivity = view.showRefreshIndicator()
+        fetchProfile()
+    }
+    
+    // MARK: - Private
+        
+    private func fetchProfile() {
+        profileService
+            .fetchProfile(for: user.id)
+            .subscribe(onSuccess: { [weak self] profile in
+                self?.stopLoading()
+                self?.setItems(profile)
+            }, onError: { [weak self] error in
+                self?.stopLoading()
+                self?.router.show(error: error)
+            })
+            .disposed(by: bag)
+    }
+    
+    private func setItems(_ user: User) {
+        let avatar = user.avatar.isEmpty ? #imageLiteral(resourceName: "sasuke"): UIImage(named: user.avatar)
+        let profileAvatar = ProfileAvatar(fullName: user.fullName, avatarImage: avatar)
+        
+        var profileItems: [ProfileInfoItem] = []
+        
+        if let job = user.job {
+            profileItems.append(.init(title: "Должность", value: job.name))
+        }
+        
+        if let shopStatus = user.shopStatus {
+            profileItems.append(.init(title: "Статус", value: "\(shopStatus.name) - действует скидка \(shopStatus.sale)% в корпоративном магазине"))
+        }
+        
+        profileItems.append(
+            contentsOf: [
+                .init(title: "Всего наград", value: "\(user.rewards.count)"),
+                .init(title: "Всего яблок", value: "\(user.money)")
+            ]
+        )
+        
         let profileInfoContainer = ProfileInfoContainer(items: profileItems + [LogoutModel()])
         view.set(items: [profileAvatar, profileInfoContainer])
+    }
+    
+    private func stopLoading() {
+        loaderActivity?.dispose()
     }
 }

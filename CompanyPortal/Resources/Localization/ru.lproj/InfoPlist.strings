@@ -2,4 +2,4 @@
 "NSPhotoLibraryUsageDescription" = "Используется для получения фотографий";
 "NSLocationWhenInUseUsageDescription" = "Используется, когда нужно рассчитать расстояние до местоположения";
 "NSMicrophoneUsageDescription" = "Используется при съемке видео";
-"CFBundleDisplayName" = "АльфаНейробика";
+"CFBundleDisplayName" = "Company Portal";

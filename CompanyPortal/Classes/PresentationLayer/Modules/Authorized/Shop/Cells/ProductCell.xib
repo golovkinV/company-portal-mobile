@@ -17,8 +17,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="203" height="355"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-MS-pjU">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-MS-pjU">
                         <rect key="frame" x="0.0" y="0.0" width="203" height="250"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="250" id="qIv-H6-K31"/>
                         </constraints>
@@ -34,14 +35,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-Hg-bb6">
-                        <rect key="frame" x="8" y="258" width="187" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="8" y="258" width="187" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAn-sX-ZwJ">
-                        <rect key="frame" x="8" y="302.5" width="187" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="8" y="288.5" width="187" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -55,7 +56,7 @@
                 <constraint firstItem="DJe-Hg-bb6" firstAttribute="top" secondItem="Ve3-MS-pjU" secondAttribute="bottom" constant="8" id="Ozd-xy-CR5"/>
                 <constraint firstItem="Ve3-MS-pjU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SPj-XT-ytk"/>
                 <constraint firstAttribute="trailing" secondItem="DJe-Hg-bb6" secondAttribute="trailing" constant="8" id="V7Y-U8-wnY"/>
-                <constraint firstItem="LAn-sX-ZwJ" firstAttribute="top" secondItem="DJe-Hg-bb6" secondAttribute="bottom" constant="24" id="Whh-sR-RN4"/>
+                <constraint firstItem="LAn-sX-ZwJ" firstAttribute="top" secondItem="DJe-Hg-bb6" secondAttribute="bottom" constant="16" id="Whh-sR-RN4"/>
                 <constraint firstItem="naL-Nq-aau" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gUa-Q6-vLN"/>
                 <constraint firstAttribute="trailing" secondItem="LAn-sX-ZwJ" secondAttribute="trailing" constant="8" id="hVA-SA-GKH"/>
                 <constraint firstItem="DJe-Hg-bb6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="sX2-x3-x1Z"/>

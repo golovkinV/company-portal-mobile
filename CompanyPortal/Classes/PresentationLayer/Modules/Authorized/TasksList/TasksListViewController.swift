@@ -13,6 +13,15 @@ final class TasksListViewController: BaseCollectionViewController {
         handler.didLoad()
     }
     
+    override func setupViews() {
+        collectionView.contentInset.top = 15
+        addRefreshControl()
+    }
+    
+    override func refresh() {
+        handler.refresh() 
+    }
+
     override func adapterCreators() -> [AdapterCreator] {
         [
             TaskCellAdapterCreator()
@@ -21,6 +30,7 @@ final class TasksListViewController: BaseCollectionViewController {
 }
 
 extension TasksListViewController: TasksListViewBehavior {
+
     func set(items: [ListDiffable]) {
         self.items = items
         update()

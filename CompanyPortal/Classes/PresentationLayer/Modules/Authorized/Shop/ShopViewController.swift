@@ -19,6 +19,11 @@ final class ShopViewController: BaseCollectionViewController {
                                                                        topContentInset: 0,
                                                                        stretchToEdge: false)
         collectionView.contentInset = .init(top: 0, left: 7.5, bottom: 0, right: 7.5)
+        addRefreshControl()
+    }
+    
+    override func refresh() {
+        handler.refresh()
     }
     
     override func adapterCreators() -> [AdapterCreator] {

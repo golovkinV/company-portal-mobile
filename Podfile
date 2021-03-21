@@ -18,6 +18,7 @@ target 'CompanyPortal' do
     pod 'KeychainAccess', '3.2.0'
     pod 'IQKeyboardManagerSwift', '6.2.0'
     pod 'RealmSwift', '3.21.0'
+    pod 'SwiftDate', '6.2.0'
     
     #UI
     pod 'IGListKit', '3.4.0'

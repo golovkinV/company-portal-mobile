@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="CompanyPortal" customModuleProvider="target">
+            <connections>
+                <outlet property="loginTextField" destination="ciM-3M-gfG" id="1FD-Pe-8d7"/>
+                <outlet property="passwordTextField" destination="cSf-Ak-KQD" id="3DW-tX-HLH"/>
+                <outlet property="signInButton" destination="JVR-eh-WNa" id="nob-k4-axT"/>
+                <outlet property="titleLabel" destination="l6E-Wo-pqp" id="fzq-0E-PGD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6E-Wo-pqp">
+                    <rect key="frame" x="15" y="68" width="384" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVR-eh-WNa" customClass="StateButton" customModule="CompanyPortal" customModuleProvider="target">
+                    <rect key="frame" x="15" y="247" width="384" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="x9L-2V-8gv"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="onTapSingInBtn:" destination="-1" eventType="touchUpInside" id="ed0-g9-PHt"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2wr-6U-iEz">
+                    <rect key="frame" x="15" y="124" width="384" height="103"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-3M-gfG" customClass="BorderTextField" customModule="CompanyPortal" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="LBS-0R-Dfh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-Ak-KQD" customClass="BorderTextField" customModule="CompanyPortal" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="59" width="384" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="bs6-39-0Vd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2wr-6U-iEz" firstAttribute="top" secondItem="l6E-Wo-pqp" secondAttribute="bottom" constant="15" id="2Ev-j8-g9v"/>
+                <constraint firstItem="2wr-6U-iEz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="N6U-nQ-JOx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JVR-eh-WNa" secondAttribute="trailing" constant="15" id="aDN-gA-oMJ"/>
+                <constraint firstItem="l6E-Wo-pqp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="agp-nr-kSS"/>
+                <constraint firstItem="JVR-eh-WNa" firstAttribute="top" secondItem="2wr-6U-iEz" secondAttribute="bottom" constant="20" id="hQ8-hi-miM"/>
+                <constraint firstItem="l6E-Wo-pqp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="iVT-QB-86F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l6E-Wo-pqp" secondAttribute="trailing" constant="15" id="ok3-5o-xhm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2wr-6U-iEz" secondAttribute="trailing" constant="15" id="opJ-CU-vrI"/>
+                <constraint firstItem="JVR-eh-WNa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="xIh-CG-e8K"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="139"/>
+        </view>
+    </objects>
+</document>
