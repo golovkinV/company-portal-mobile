@@ -43,7 +43,14 @@ extension ProductDetailPresenter: ProductDetailEventHandler {
     }
     
     func buyProduct(_ item: ProductShopModel) {
+        let tapBlock: Action<Int> = { [weak self] offset in
+            self?.view.close()
+        }
         
+        MRAppAlertController.alert("Cпасибо за покупку!",
+                                   message: "Ожидайте, наш менеджер свяжется с Вами",
+                                   buttons: ["Ок"],
+                                   tapBlock: tapBlock)
     }
     
     // MARK: - Private
@@ -55,7 +62,7 @@ extension ProductDetailPresenter: ProductDetailEventHandler {
                 let image = ProductImageModel(name: product.name, image: product.image, state: product.state)
                 let shop = ProductShopModel(price: product.price)
                 let info = [InfoModel(title: "Описание", value: product.desc),
-                            InfoModel(title: "Цена", value: "\(product.price)")]
+                            InfoModel(title: "Цена", value: "\(product.price)", sale: 15)]
                 let items: [ListDiffable] = [image] + info.filter { $0.value != nil } + [shop]
                 self?.view.set(items: items)
             }, onError: { [weak self] error in

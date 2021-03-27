@@ -33,4 +33,8 @@ extension ProductDetailViewController: ProductDetailViewBehavior {
         self.items = items
         update()
     }
+    
+    func close() {
+        sheetViewController?.dismiss(animated: true, completion: nil)
+    }
 }

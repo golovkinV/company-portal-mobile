@@ -42,6 +42,13 @@ final class InfoCell: UICollectionViewCell {
     func configure(_ item: InfoModel) -> InfoCell {
         titleLabel.text = item.title
         valueLabel.text = item.value
+        if let sale = item.sale,
+           let value = item.value,
+           let price = Int(value){
+            titleLabel.text = "Цена с учетом скидки"
+            let pr = price - Int(price * sale/100)
+            valueLabel.text = "\(pr)"
+        }
         return self
     }
     

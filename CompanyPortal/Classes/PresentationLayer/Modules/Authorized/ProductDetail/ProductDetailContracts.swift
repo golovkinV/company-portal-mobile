@@ -4,6 +4,7 @@ import IGListKit
 
 protocol ProductDetailViewBehavior: WaitingBehavior {
     func set(items: [ListDiffable])
+    func close()
 }
 
 protocol ProductDetailEventHandler: ViewControllerEventHandler {
